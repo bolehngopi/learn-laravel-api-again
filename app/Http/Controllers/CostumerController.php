@@ -25,7 +25,7 @@ class CostumerController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function register(StoreCostumerRequest $request)
+    public function store(StoreCostumerRequest $request)
     {
         $credentials = $request->validated();
 
