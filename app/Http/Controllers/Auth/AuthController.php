@@ -11,7 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class AuthController extends Controller
 {
     /**
-     * Login to get token
+     * Login user and create token for user
      */
     public function login(Request $request)
     {
@@ -36,6 +36,9 @@ class AuthController extends Controller
         ], 400);
     }
 
+    /**
+     * Register user and create token for user
+     */
     public function register(Request $request) {
         $credentials = $request->validate([
             'username' => 'string|required|unique:users',
@@ -61,7 +64,7 @@ class AuthController extends Controller
     }
 
     /**
-     * Logout
+     * Logout user and delete token for user
      */
     public function logout(Request $request)
     {

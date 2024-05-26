@@ -41,7 +41,7 @@ class CostumerController extends Controller
         }
 
         return response()->json([
-            'messages' => 'Invalid',
+            'messages' => 'Invalid data or something went wrong',
         ], 422);
     }
 
@@ -52,7 +52,7 @@ class CostumerController extends Controller
     {
         $costumer->load('rentals', 'returs');
         return response()->json([
-            'message' => 'Successful',
+            'message' => 'Success',
             'data' => CostumerResource::make($costumer)
         ]);
     }
@@ -71,16 +71,16 @@ class CostumerController extends Controller
             'description' => $request->description ?? $costumer->description
         ]);
 
-        if (!$update) {
+        if ($update) {
             return response()->json([
-                'message' => 'Unsuccessful',
-            ], 400);
+                'message' => 'Update successful',
+            'data' => CostumerResource::make($costumer)
+            ]);
         }
 
         return response()->json([
-            'message' => 'Update successful',
-            'data' => CostumerResource::make($costumer)
-        ]);
+            'message' => 'Unsuccessful',
+        ], 400);
     }
 
     /**
@@ -92,7 +92,7 @@ class CostumerController extends Controller
 
         if(!$delete) {
             return response()->json([
-                'message' => 'Unsuccessful'
+                'message' => 'Delete unsuccessful'
             ], 400);
         }
 

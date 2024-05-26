@@ -4,6 +4,12 @@ namespace Database\Factories\Helpers;
 
 class FactoryHelper
 {
+    /**
+     * Get random model id
+     *
+     * @param string $model
+     * @return int
+     */
     public static function getRandomModelId(string $model)
     {
         $count = $model::query()->count();
