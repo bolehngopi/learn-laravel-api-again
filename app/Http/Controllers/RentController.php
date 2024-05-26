@@ -14,13 +14,6 @@ class RentController extends Controller
      */
     public function index(Request $request)
     {
-        // Validate the customer ID
-        // $validatedData = $request->validate([
-        //     'id' => 'required|integer|exists:rents,costumer_id'
-        // ]);
-
-        // Retrieve rents based on the provided customer ID
-        // $rents = Rent::where('costumer_id', $validatedData['id'])->get();
         $rents = Rent::all();
 
         if ($rents->count() > 0){
@@ -63,7 +56,10 @@ class RentController extends Controller
      */
     public function show(Rent $rent)
     {
-
+        return response()->json([
+            'message' => 'Success',
+            'data' => $rent
+        ]);
     }
 
     /**
