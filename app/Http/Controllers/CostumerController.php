@@ -77,7 +77,7 @@ class CostumerController extends Controller
 
         return response()->json([
             'message' => 'Update successful',
-            'data' => $update
+            'data' => $costumer
         ]);
     }
 

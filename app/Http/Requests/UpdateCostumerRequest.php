@@ -22,11 +22,11 @@ class UpdateCostumerRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'no_ktp' => 'integer|max:16',
+            'no_ktp' => 'string',
             'name' => 'string',
             'date_of_birth' => 'date',
-            'email' => 'string|unique:costumers',
-            'phone' => 'integer',
+            'email' => 'string',
+            'phone' => 'string',
             'description' => 'string'
         ];
     }

@@ -22,11 +22,11 @@ class StoreCostumerRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'no_ktp' => 'integer|max:16|required',
+            'no_ktp' => 'string|required',
             'name' => 'string|required',
             'date_of_birth' => 'date|required',
             'email' => 'string|unique:costumers',
-            'phone' => 'integer|required',
+            'phone' => 'string|required',
             'description' => 'string'
         ];
     }

@@ -30,10 +30,11 @@ Route::prefix('/v1')->group(function() {
         Route::post('/logout', 'logout')->name('auth.logout')->middleware('auth:sanctum');
     });
 
-    Route::middleware('auth:sanctum')->group(function() {
+    // Route::middleware('auth:sanctum')->group(function() {
         Route::apiResource('user', UserController::class);
         Route::apiResource('rent', RentController::class);
         Route::apiResource('costumer', CostumerController::class);
-    });
+        // Route::apiResource('return', ReturCostumer::class);
+    // });
     // Route::post('/register', [CostumerController::class, 'register'])->name('costumer.register');
 });

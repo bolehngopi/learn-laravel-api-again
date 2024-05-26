@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('rents', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('costumer_id')->constrained('costumers');
+            $table->foreignId('costumer_id')->nullable()->constrained('costumers')->cascadeOnDelete;
             $table->integer('no_car');
             $table->date('date_borrow')->nullable();
             $table->date('date_return')->nullable();
