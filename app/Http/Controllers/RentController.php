@@ -11,10 +11,11 @@ class RentController extends Controller
 {
     /**
      * Display a listing of the resource.
+     * @queryParam page_size How big the data is. Defaults to '10'.
      */
     public function index(Request $request)
     {
-        $rents = Rent::all();
+        $rents = Rent::paginate($request->page_size ?? 10);
 
         if ($rents->count() > 0){
             return response()->json([

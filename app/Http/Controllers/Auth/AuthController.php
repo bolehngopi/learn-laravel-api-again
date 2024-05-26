@@ -65,6 +65,7 @@ class AuthController extends Controller
 
     /**
      * Logout user and delete token for user
+     * @authenticated
      */
     public function logout(Request $request)
     {

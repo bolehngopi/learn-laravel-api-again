@@ -19,7 +19,8 @@ class CostumerController extends Controller
         $costumers = Costumer::paginate($pageSize);
         return response()->json([
             'messages' => 'success',
-            'data' => CostumerResource::collection($costumers)
+            'data' => $costumers
+            // CostumerResource::collection($costumers)
         ]);
     }
 

@@ -1,0 +1,2376 @@
+openapi: 3.0.3
+info:
+  title: 'API Documentation'
+  description: 'A short description of your API.'
+  version: 1.0.0
+servers:
+  -
+    url: 'http://apiproject.test'
+paths:
+  /api/user:
+    get:
+      summary: ''
+      operationId: getApiUser
+      description: ''
+      parameters: []
+      responses:
+        401:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Unauthenticated.
+                properties:
+                  message:
+                    type: string
+                    example: Unauthenticated.
+      tags:
+        - Endpoints
+      security: []
+  /api/v1/auth/login:
+    post:
+      summary: 'Login user and create token for user'
+      operationId: loginUserAndCreateTokenForUser
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  description: ''
+                  example: voluptatibus
+                password:
+                  type: string
+                  description: ''
+                  example: .Ax^Grfo/
+              required:
+                - username
+                - password
+      security: []
+  /api/v1/auth/logout:
+    post:
+      summary: 'Logout user and delete token for user'
+      operationId: logoutUserAndDeleteTokenForUser
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+  /api/v1/user:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  messages: success
+                  data:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        no_ktp: '166363899931804'
+                        name: 'Garda Prasetyo'
+                        date_of_birth: '1975-09-30'
+                        email: trajata@example.com
+                        phone: '(+62) 392 4952 567'
+                        description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 2
+                        no_ktp: '317884785688321'
+                        name: 'Puput Nasyidah'
+                        date_of_birth: '1979-05-24'
+                        email: ssitumorang@example.net
+                        phone: '0633 8917 070'
+                        description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 3
+                        no_ktp: '897152731431219'
+                        name: 'Ellis Lailasari'
+                        date_of_birth: '1993-03-29'
+                        email: cici.safitri@example.com
+                        phone: '(+62) 270 6975 732'
+                        description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 4
+                        no_ktp: '513039062743979'
+                        name: 'Almira Wulandari'
+                        date_of_birth: '1997-10-08'
+                        email: efirgantoro@example.org
+                        phone: '0832 6486 9870'
+                        description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                    first_page_url: 'http://apiproject.test/api/v1/user?page=1'
+                    from: 1
+                    last_page: 50
+                    last_page_url: 'http://apiproject.test/api/v1/user?page=50'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=3'
+                        label: '3'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=4'
+                        label: '4'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=5'
+                        label: '5'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=6'
+                        label: '6'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=7'
+                        label: '7'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=8'
+                        label: '8'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=9'
+                        label: '9'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=10'
+                        label: '10'
+                        active: false
+                      -
+                        url: null
+                        label: ...
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=49'
+                        label: '49'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=50'
+                        label: '50'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    next_page_url: 'http://apiproject.test/api/v1/user?page=2'
+                    path: 'http://apiproject.test/api/v1/user'
+                    per_page: 4
+                    prev_page_url: null
+                    to: 4
+                    total: 200
+                properties:
+                  messages:
+                    type: string
+                    example: success
+                  data:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            no_ktp: '166363899931804'
+                            name: 'Garda Prasetyo'
+                            date_of_birth: '1975-09-30'
+                            email: trajata@example.com
+                            phone: '(+62) 392 4952 567'
+                            description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 2
+                            no_ktp: '317884785688321'
+                            name: 'Puput Nasyidah'
+                            date_of_birth: '1979-05-24'
+                            email: ssitumorang@example.net
+                            phone: '0633 8917 070'
+                            description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 3
+                            no_ktp: '897152731431219'
+                            name: 'Ellis Lailasari'
+                            date_of_birth: '1993-03-29'
+                            email: cici.safitri@example.com
+                            phone: '(+62) 270 6975 732'
+                            description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 4
+                            no_ktp: '513039062743979'
+                            name: 'Almira Wulandari'
+                            date_of_birth: '1997-10-08'
+                            email: efirgantoro@example.org
+                            phone: '0832 6486 9870'
+                            description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            no_ktp:
+                              type: string
+                              example: '166363899931804'
+                            name:
+                              type: string
+                              example: 'Garda Prasetyo'
+                            date_of_birth:
+                              type: string
+                              example: '1975-09-30'
+                            email:
+                              type: string
+                              example: trajata@example.com
+                            phone:
+                              type: string
+                              example: '(+62) 392 4952 567'
+                            description:
+                              type: string
+                              example: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                            created_at:
+                              type: string
+                              example: '2024-05-26T12:59:56.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2024-05-26T12:59:56.000000Z'
+                      first_page_url:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/user?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 50
+                      last_page_url:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/user?page=50'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=3'
+                            label: '3'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=4'
+                            label: '4'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=5'
+                            label: '5'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=6'
+                            label: '6'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=7'
+                            label: '7'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=8'
+                            label: '8'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=9'
+                            label: '9'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=10'
+                            label: '10'
+                            active: false
+                          -
+                            url: null
+                            label: ...
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=49'
+                            label: '49'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=50'
+                            label: '50'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/user?page=2'
+                      path:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/user'
+                      per_page:
+                        type: integer
+                        example: 4
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 4
+                      total:
+                        type: integer
+                        example: 200
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+  '/api/v1/user/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            text/plain:
+              schema:
+                type: string
+                example: ''
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the user.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/v1/rent:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters:
+        -
+          in: query
+          name: page_size
+          description: "How big the data is. Defaults to '10'."
+          example: odio
+          required: false
+          schema:
+            type: string
+            description: "How big the data is. Defaults to '10'."
+            example: odio
+      responses:
+        500:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: 'Unsupported operand types: string * int'
+                  exception: TypeError
+                  file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php'
+                  line: 2575
+                  trace:
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php'
+                      line: 23
+                      function: forPage
+                      class: Illuminate\Database\Query\Builder
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php'
+                      line: 1985
+                      function: forwardCallTo
+                      class: Illuminate\Database\Eloquent\Builder
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php'
+                      line: 931
+                      function: __call
+                      class: Illuminate\Database\Eloquent\Builder
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php'
+                      line: 23
+                      function: paginate
+                      class: Illuminate\Database\Eloquent\Builder
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                      line: 2334
+                      function: forwardCallTo
+                      class: Illuminate\Database\Eloquent\Model
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                      line: 2346
+                      function: __call
+                      class: Illuminate\Database\Eloquent\Model
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\app\Http\Controllers\RentController.php'
+                      line: 18
+                      function: __callStatic
+                      class: Illuminate\Database\Eloquent\Model
+                      type: '::'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
+                      line: 54
+                      function: index
+                      class: App\Http\Controllers\RentController
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php'
+                      line: 43
+                      function: callAction
+                      class: Illuminate\Routing\Controller
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                      line: 259
+                      function: dispatch
+                      class: Illuminate\Routing\ControllerDispatcher
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                      line: 205
+                      function: runController
+                      class: Illuminate\Routing\Route
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 806
+                      function: run
+                      class: Illuminate\Routing\Route
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 144
+                      function: 'Illuminate\Routing\{closure}'
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php'
+                      line: 50
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Routing\Middleware\SubstituteBindings
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      line: 159
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      line: 125
+                      function: handleRequest
+                      class: Illuminate\Routing\Middleware\ThrottleRequests
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                      line: 87
+                      function: handleRequestUsingNamedLimiter
+                      class: Illuminate\Routing\Middleware\ThrottleRequests
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Routing\Middleware\ThrottleRequests
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 119
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 805
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 784
+                      function: runRouteWithinStack
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 748
+                      function: runRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                      line: 737
+                      function: dispatchToRoute
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      line: 200
+                      function: dispatch
+                      class: Illuminate\Routing\Router
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 144
+                      function: 'Illuminate\Foundation\Http\{closure}'
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
+                      line: 31
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                      line: 21
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
+                      line: 40
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\TrimStrings
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
+                      line: 27
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
+                      line: 99
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
+                      line: 62
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Http\Middleware\HandleCors
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
+                      line: 39
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 183
+                      function: handle
+                      class: Illuminate\Http\Middleware\TrustProxies
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                      line: 119
+                      function: 'Illuminate\Pipeline\{closure}'
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      line: 175
+                      function: then
+                      class: Illuminate\Pipeline\Pipeline
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                      line: 144
+                      function: sendRequestThroughRouter
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 300
+                      function: handle
+                      class: Illuminate\Foundation\Http\Kernel
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 288
+                      function: callLaravelOrLumenRoute
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 91
+                      function: makeApiCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 44
+                      function: makeResponseCall
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                      line: 35
+                      function: makeResponseCallIfConditionsPass
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      line: 236
+                      function: __invoke
+                      class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      line: 163
+                      function: iterateThroughStrategies
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                      line: 95
+                      function: fetchResponses
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      line: 125
+                      function: processRoute
+                      class: Knuckles\Scribe\Extracting\Extractor
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      line: 72
+                      function: extractEndpointsInfoFromLaravelApp
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                      line: 50
+                      function: extractEndpointsInfoAndWriteToDisk
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
+                      line: 53
+                      function: get
+                      class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      line: 36
+                      function: handle
+                      class: Knuckles\Scribe\Commands\GenerateDocumentation
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\Util.php'
+                      line: 41
+                      function: 'Illuminate\Container\{closure}'
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      line: 93
+                      function: unwrapIfClosure
+                      class: Illuminate\Container\Util
+                      type: '::'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                      line: 35
+                      function: callBoundMethod
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\Container.php'
+                      line: 662
+                      function: call
+                      class: Illuminate\Container\BoundMethod
+                      type: '::'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                      line: 211
+                      function: call
+                      class: Illuminate\Container\Container
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\symfony\console\Command\Command.php'
+                      line: 326
+                      function: execute
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                      line: 180
+                      function: run
+                      class: Symfony\Component\Console\Command\Command
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\symfony\console\Application.php'
+                      line: 1096
+                      function: run
+                      class: Illuminate\Console\Command
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\symfony\console\Application.php'
+                      line: 324
+                      function: doRunCommand
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\symfony\console\Application.php'
+                      line: 175
+                      function: doRun
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
+                      line: 201
+                      function: run
+                      class: Symfony\Component\Console\Application
+                      type: '->'
+                    -
+                      file: 'C:\laragon\www\apiproject\artisan'
+                      line: 35
+                      function: handle
+                      class: Illuminate\Foundation\Console\Kernel
+                      type: '->'
+                properties:
+                  message:
+                    type: string
+                    example: 'Unsupported operand types: string * int'
+                  exception:
+                    type: string
+                    example: TypeError
+                  file:
+                    type: string
+                    example: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Query\Builder.php'
+                  line:
+                    type: integer
+                    example: 2575
+                  trace:
+                    type: array
+                    example:
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php'
+                        line: 23
+                        function: forPage
+                        class: Illuminate\Database\Query\Builder
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php'
+                        line: 1985
+                        function: forwardCallTo
+                        class: Illuminate\Database\Eloquent\Builder
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Builder.php'
+                        line: 931
+                        function: __call
+                        class: Illuminate\Database\Eloquent\Builder
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php'
+                        line: 23
+                        function: paginate
+                        class: Illuminate\Database\Eloquent\Builder
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                        line: 2334
+                        function: forwardCallTo
+                        class: Illuminate\Database\Eloquent\Model
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Database\Eloquent\Model.php'
+                        line: 2346
+                        function: __call
+                        class: Illuminate\Database\Eloquent\Model
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\app\Http\Controllers\RentController.php'
+                        line: 18
+                        function: __callStatic
+                        class: Illuminate\Database\Eloquent\Model
+                        type: '::'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Controller.php'
+                        line: 54
+                        function: index
+                        class: App\Http\Controllers\RentController
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\ControllerDispatcher.php'
+                        line: 43
+                        function: callAction
+                        class: Illuminate\Routing\Controller
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                        line: 259
+                        function: dispatch
+                        class: Illuminate\Routing\ControllerDispatcher
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Route.php'
+                        line: 205
+                        function: runController
+                        class: Illuminate\Routing\Route
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 806
+                        function: run
+                        class: Illuminate\Routing\Route
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 144
+                        function: 'Illuminate\Routing\{closure}'
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\SubstituteBindings.php'
+                        line: 50
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Routing\Middleware\SubstituteBindings
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        line: 159
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        line: 125
+                        function: handleRequest
+                        class: Illuminate\Routing\Middleware\ThrottleRequests
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Middleware\ThrottleRequests.php'
+                        line: 87
+                        function: handleRequestUsingNamedLimiter
+                        class: Illuminate\Routing\Middleware\ThrottleRequests
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Routing\Middleware\ThrottleRequests
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 119
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 805
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 784
+                        function: runRouteWithinStack
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 748
+                        function: runRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Routing\Router.php'
+                        line: 737
+                        function: dispatchToRoute
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        line: 200
+                        function: dispatch
+                        class: Illuminate\Routing\Router
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 144
+                        function: 'Illuminate\Foundation\Http\{closure}'
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull.php'
+                        line: 31
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TransformsRequest.php'
+                        line: 21
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\TrimStrings.php'
+                        line: 40
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TransformsRequest
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\TrimStrings
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\ValidatePostSize.php'
+                        line: 27
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\ValidatePostSize
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance.php'
+                        line: 99
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Foundation\Http\Middleware\PreventRequestsDuringMaintenance
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Http\Middleware\HandleCors.php'
+                        line: 62
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Http\Middleware\HandleCors
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Http\Middleware\TrustProxies.php'
+                        line: 39
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 183
+                        function: handle
+                        class: Illuminate\Http\Middleware\TrustProxies
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Pipeline\Pipeline.php'
+                        line: 119
+                        function: 'Illuminate\Pipeline\{closure}'
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        line: 175
+                        function: then
+                        class: Illuminate\Pipeline\Pipeline
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Http\Kernel.php'
+                        line: 144
+                        function: sendRequestThroughRouter
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 300
+                        function: handle
+                        class: Illuminate\Foundation\Http\Kernel
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 288
+                        function: callLaravelOrLumenRoute
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 91
+                        function: makeApiCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 44
+                        function: makeResponseCall
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Strategies\Responses\ResponseCalls.php'
+                        line: 35
+                        function: makeResponseCallIfConditionsPass
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        line: 236
+                        function: __invoke
+                        class: Knuckles\Scribe\Extracting\Strategies\Responses\ResponseCalls
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        line: 163
+                        function: iterateThroughStrategies
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Extracting\Extractor.php'
+                        line: 95
+                        function: fetchResponses
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        line: 125
+                        function: processRoute
+                        class: Knuckles\Scribe\Extracting\Extractor
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        line: 72
+                        function: extractEndpointsInfoFromLaravelApp
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\GroupedEndpoints\GroupedEndpointsFromApp.php'
+                        line: 50
+                        function: extractEndpointsInfoAndWriteToDisk
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\knuckleswtf\scribe\src\Commands\GenerateDocumentation.php'
+                        line: 53
+                        function: get
+                        class: Knuckles\Scribe\GroupedEndpoints\GroupedEndpointsFromApp
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        line: 36
+                        function: handle
+                        class: Knuckles\Scribe\Commands\GenerateDocumentation
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\Util.php'
+                        line: 41
+                        function: 'Illuminate\Container\{closure}'
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        line: 93
+                        function: unwrapIfClosure
+                        class: Illuminate\Container\Util
+                        type: '::'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php'
+                        line: 35
+                        function: callBoundMethod
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Container\Container.php'
+                        line: 662
+                        function: call
+                        class: Illuminate\Container\BoundMethod
+                        type: '::'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                        line: 211
+                        function: call
+                        class: Illuminate\Container\Container
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\symfony\console\Command\Command.php'
+                        line: 326
+                        function: execute
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Console\Command.php'
+                        line: 180
+                        function: run
+                        class: Symfony\Component\Console\Command\Command
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\symfony\console\Application.php'
+                        line: 1096
+                        function: run
+                        class: Illuminate\Console\Command
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\symfony\console\Application.php'
+                        line: 324
+                        function: doRunCommand
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\symfony\console\Application.php'
+                        line: 175
+                        function: doRun
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Foundation\Console\Kernel.php'
+                        line: 201
+                        function: run
+                        class: Symfony\Component\Console\Application
+                        type: '->'
+                      -
+                        file: 'C:\laragon\www\apiproject\artisan'
+                        line: 35
+                        function: handle
+                        class: Illuminate\Foundation\Console\Kernel
+                        type: '->'
+                    items:
+                      type: object
+                      properties:
+                        file:
+                          type: string
+                          example: 'C:\laragon\www\apiproject\vendor\laravel\framework\src\Illuminate\Support\Traits\ForwardsCalls.php'
+                        line:
+                          type: integer
+                          example: 23
+                        function:
+                          type: string
+                          example: forPage
+                        class:
+                          type: string
+                          example: Illuminate\Database\Query\Builder
+                        type:
+                          type: string
+                          example: '->'
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                costumer_id:
+                  type: integer
+                  description: ''
+                  example: 4
+                no_car:
+                  type: integer
+                  description: ''
+                  example: 13
+                date_borrow:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:45'
+                date_return:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:45'
+                down_payment:
+                  type: integer
+                  description: ''
+                  example: 1
+                discount:
+                  type: integer
+                  description: ''
+                  example: 20
+                total:
+                  type: integer
+                  description: ''
+                  example: 18
+              required:
+                - costumer_id
+                - no_car
+                - date_borrow
+                - date_return
+                - down_payment
+                - discount
+                - total
+      security: []
+  '/api/v1/rent/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Success
+                  data:
+                    id: 1
+                    costumer_id: 138
+                    no_car: 3
+                    date_borrow: '1985-09-24'
+                    date_return: '2024-03-15'
+                    down_payment: 65
+                    discount: 157969
+                    total: '51791'
+                    created_at: '2024-05-26T12:59:57.000000Z'
+                    updated_at: '2024-05-26T12:59:57.000000Z'
+                properties:
+                  message:
+                    type: string
+                    example: Success
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      costumer_id:
+                        type: integer
+                        example: 138
+                      no_car:
+                        type: integer
+                        example: 3
+                      date_borrow:
+                        type: string
+                        example: '1985-09-24'
+                      date_return:
+                        type: string
+                        example: '2024-03-15'
+                      down_payment:
+                        type: integer
+                        example: 65
+                      discount:
+                        type: integer
+                        example: 157969
+                      total:
+                        type: string
+                        example: '51791'
+                      created_at:
+                        type: string
+                        example: '2024-05-26T12:59:57.000000Z'
+                      updated_at:
+                        type: string
+                        example: '2024-05-26T12:59:57.000000Z'
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                costumer_id:
+                  type: integer
+                  description: ''
+                  example: 17
+                no_car:
+                  type: integer
+                  description: ''
+                  example: 7
+                date_borrow:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:45'
+                date_return:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:45'
+                down_payment:
+                  type: integer
+                  description: ''
+                  example: 7
+                discount:
+                  type: integer
+                  description: ''
+                  example: 7
+                total:
+                  type: integer
+                  description: ''
+                  example: 15
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the rent.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/v1/costumer:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  messages: success
+                  data:
+                    current_page: 1
+                    data:
+                      -
+                        id: 1
+                        no_ktp: '166363899931804'
+                        name: 'Garda Prasetyo'
+                        date_of_birth: '1975-09-30'
+                        email: trajata@example.com
+                        phone: '(+62) 392 4952 567'
+                        description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 2
+                        no_ktp: '317884785688321'
+                        name: 'Puput Nasyidah'
+                        date_of_birth: '1979-05-24'
+                        email: ssitumorang@example.net
+                        phone: '0633 8917 070'
+                        description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 3
+                        no_ktp: '897152731431219'
+                        name: 'Ellis Lailasari'
+                        date_of_birth: '1993-03-29'
+                        email: cici.safitri@example.com
+                        phone: '(+62) 270 6975 732'
+                        description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 4
+                        no_ktp: '513039062743979'
+                        name: 'Almira Wulandari'
+                        date_of_birth: '1997-10-08'
+                        email: efirgantoro@example.org
+                        phone: '0832 6486 9870'
+                        description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 5
+                        no_ktp: '453818582287698'
+                        name: 'Mahesa Hutagalung'
+                        date_of_birth: '2020-03-30'
+                        email: vnasyiah@example.net
+                        phone: '0317 7262 3110'
+                        description: 'Est consequatur dicta et est harum dolor dolor quos. Recusandae et commodi adipisci tempore temporibus voluptate incidunt at. Minima expedita eaque reiciendis assumenda.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 6
+                        no_ktp: '360454731823249'
+                        name: 'Yessi Padmasari'
+                        date_of_birth: '1986-08-10'
+                        email: farida.azalea@example.net
+                        phone: '(+62) 827 4053 1233'
+                        description: 'Sit est aut vero voluptatem eaque ad optio. Nobis repellendus quis totam laudantium provident deleniti. Quia dicta et et quo autem est velit.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 7
+                        no_ktp: '302824082987660'
+                        name: 'Edi Jasmani Manullang'
+                        date_of_birth: '1994-02-09'
+                        email: halima.natsir@example.net
+                        phone: '0636 3514 4632'
+                        description: 'Qui neque magnam voluptatem eos ut quo eius non. Quis et ut totam pariatur aut. Nihil occaecati corrupti repudiandae quia architecto.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 8
+                        no_ktp: '750261365811808'
+                        name: 'Zamira Suartini'
+                        date_of_birth: '1990-09-26'
+                        email: vanesa.yuliarti@example.org
+                        phone: '0330 3103 248'
+                        description: 'In porro dolorum natus et modi ut cum. Iste necessitatibus earum eaque ad. Ex facere dolorem deserunt et eius voluptates.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 9
+                        no_ktp: '869505846000205'
+                        name: 'Kardi Manullang'
+                        date_of_birth: '2003-07-14'
+                        email: hassanah.rini@example.net
+                        phone: '0266 2281 5236'
+                        description: 'Necessitatibus rerum incidunt autem cum ut. Modi dolores qui ut illum et. Quibusdam ut magnam voluptate iusto reprehenderit ab natus. Dolores architecto quasi rerum ipsam dolorem et.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                      -
+                        id: 10
+                        no_ktp: '63427351429694'
+                        name: 'Elisa Belinda Namaga S.Pd'
+                        date_of_birth: '1992-03-26'
+                        email: kacung62@example.com
+                        phone: '(+62) 529 0956 4505'
+                        description: 'Dicta natus pariatur sed in. Architecto eaque amet non et nisi recusandae. Expedita numquam inventore placeat omnis. Qui harum sapiente voluptatibus aperiam.'
+                        created_at: '2024-05-26T12:59:56.000000Z'
+                        updated_at: '2024-05-26T12:59:56.000000Z'
+                    first_page_url: 'http://apiproject.test/api/v1/costumer?page=1'
+                    from: 1
+                    last_page: 20
+                    last_page_url: 'http://apiproject.test/api/v1/costumer?page=20'
+                    links:
+                      -
+                        url: null
+                        label: '&laquo; Previous'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=1'
+                        label: '1'
+                        active: true
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=2'
+                        label: '2'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=3'
+                        label: '3'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=4'
+                        label: '4'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=5'
+                        label: '5'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=6'
+                        label: '6'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=7'
+                        label: '7'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=8'
+                        label: '8'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=9'
+                        label: '9'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=10'
+                        label: '10'
+                        active: false
+                      -
+                        url: null
+                        label: ...
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=19'
+                        label: '19'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=20'
+                        label: '20'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=2'
+                        label: 'Next &raquo;'
+                        active: false
+                    next_page_url: 'http://apiproject.test/api/v1/costumer?page=2'
+                    path: 'http://apiproject.test/api/v1/costumer'
+                    per_page: 10
+                    prev_page_url: null
+                    to: 10
+                    total: 200
+                properties:
+                  messages:
+                    type: string
+                    example: success
+                  data:
+                    type: object
+                    properties:
+                      current_page:
+                        type: integer
+                        example: 1
+                      data:
+                        type: array
+                        example:
+                          -
+                            id: 1
+                            no_ktp: '166363899931804'
+                            name: 'Garda Prasetyo'
+                            date_of_birth: '1975-09-30'
+                            email: trajata@example.com
+                            phone: '(+62) 392 4952 567'
+                            description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 2
+                            no_ktp: '317884785688321'
+                            name: 'Puput Nasyidah'
+                            date_of_birth: '1979-05-24'
+                            email: ssitumorang@example.net
+                            phone: '0633 8917 070'
+                            description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 3
+                            no_ktp: '897152731431219'
+                            name: 'Ellis Lailasari'
+                            date_of_birth: '1993-03-29'
+                            email: cici.safitri@example.com
+                            phone: '(+62) 270 6975 732'
+                            description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 4
+                            no_ktp: '513039062743979'
+                            name: 'Almira Wulandari'
+                            date_of_birth: '1997-10-08'
+                            email: efirgantoro@example.org
+                            phone: '0832 6486 9870'
+                            description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 5
+                            no_ktp: '453818582287698'
+                            name: 'Mahesa Hutagalung'
+                            date_of_birth: '2020-03-30'
+                            email: vnasyiah@example.net
+                            phone: '0317 7262 3110'
+                            description: 'Est consequatur dicta et est harum dolor dolor quos. Recusandae et commodi adipisci tempore temporibus voluptate incidunt at. Minima expedita eaque reiciendis assumenda.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 6
+                            no_ktp: '360454731823249'
+                            name: 'Yessi Padmasari'
+                            date_of_birth: '1986-08-10'
+                            email: farida.azalea@example.net
+                            phone: '(+62) 827 4053 1233'
+                            description: 'Sit est aut vero voluptatem eaque ad optio. Nobis repellendus quis totam laudantium provident deleniti. Quia dicta et et quo autem est velit.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 7
+                            no_ktp: '302824082987660'
+                            name: 'Edi Jasmani Manullang'
+                            date_of_birth: '1994-02-09'
+                            email: halima.natsir@example.net
+                            phone: '0636 3514 4632'
+                            description: 'Qui neque magnam voluptatem eos ut quo eius non. Quis et ut totam pariatur aut. Nihil occaecati corrupti repudiandae quia architecto.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 8
+                            no_ktp: '750261365811808'
+                            name: 'Zamira Suartini'
+                            date_of_birth: '1990-09-26'
+                            email: vanesa.yuliarti@example.org
+                            phone: '0330 3103 248'
+                            description: 'In porro dolorum natus et modi ut cum. Iste necessitatibus earum eaque ad. Ex facere dolorem deserunt et eius voluptates.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 9
+                            no_ktp: '869505846000205'
+                            name: 'Kardi Manullang'
+                            date_of_birth: '2003-07-14'
+                            email: hassanah.rini@example.net
+                            phone: '0266 2281 5236'
+                            description: 'Necessitatibus rerum incidunt autem cum ut. Modi dolores qui ut illum et. Quibusdam ut magnam voluptate iusto reprehenderit ab natus. Dolores architecto quasi rerum ipsam dolorem et.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                          -
+                            id: 10
+                            no_ktp: '63427351429694'
+                            name: 'Elisa Belinda Namaga S.Pd'
+                            date_of_birth: '1992-03-26'
+                            email: kacung62@example.com
+                            phone: '(+62) 529 0956 4505'
+                            description: 'Dicta natus pariatur sed in. Architecto eaque amet non et nisi recusandae. Expedita numquam inventore placeat omnis. Qui harum sapiente voluptatibus aperiam.'
+                            created_at: '2024-05-26T12:59:56.000000Z'
+                            updated_at: '2024-05-26T12:59:56.000000Z'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 1
+                            no_ktp:
+                              type: string
+                              example: '166363899931804'
+                            name:
+                              type: string
+                              example: 'Garda Prasetyo'
+                            date_of_birth:
+                              type: string
+                              example: '1975-09-30'
+                            email:
+                              type: string
+                              example: trajata@example.com
+                            phone:
+                              type: string
+                              example: '(+62) 392 4952 567'
+                            description:
+                              type: string
+                              example: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                            created_at:
+                              type: string
+                              example: '2024-05-26T12:59:56.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2024-05-26T12:59:56.000000Z'
+                      first_page_url:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/costumer?page=1'
+                      from:
+                        type: integer
+                        example: 1
+                      last_page:
+                        type: integer
+                        example: 20
+                      last_page_url:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/costumer?page=20'
+                      links:
+                        type: array
+                        example:
+                          -
+                            url: null
+                            label: '&laquo; Previous'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=1'
+                            label: '1'
+                            active: true
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=2'
+                            label: '2'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=3'
+                            label: '3'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=4'
+                            label: '4'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=5'
+                            label: '5'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=6'
+                            label: '6'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=7'
+                            label: '7'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=8'
+                            label: '8'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=9'
+                            label: '9'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=10'
+                            label: '10'
+                            active: false
+                          -
+                            url: null
+                            label: ...
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=19'
+                            label: '19'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=20'
+                            label: '20'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=2'
+                            label: 'Next &raquo;'
+                            active: false
+                        items:
+                          type: object
+                          properties:
+                            url:
+                              type: string
+                              example: null
+                            label:
+                              type: string
+                              example: '&laquo; Previous'
+                            active:
+                              type: boolean
+                              example: false
+                      next_page_url:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/costumer?page=2'
+                      path:
+                        type: string
+                        example: 'http://apiproject.test/api/v1/costumer'
+                      per_page:
+                        type: integer
+                        example: 10
+                      prev_page_url:
+                        type: string
+                        example: null
+                      to:
+                        type: integer
+                        example: 10
+                      total:
+                        type: integer
+                        example: 200
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                no_ktp:
+                  type: string
+                  description: ''
+                  example: illum
+                name:
+                  type: string
+                  description: ''
+                  example: impedit
+                date_of_birth:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:46'
+                email:
+                  type: string
+                  description: ''
+                  example: windler.dax@example.net
+                phone:
+                  type: string
+                  description: ''
+                  example: exercitationem
+                description:
+                  type: string
+                  description: ''
+                  example: 'Iure velit nisi omnis distinctio sit voluptatem.'
+              required:
+                - no_ktp
+                - name
+                - date_of_birth
+                - phone
+      security: []
+  '/api/v1/costumer/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Success
+                  data:
+                    id: 1
+                    no_ktp: '166363899931804'
+                    name: 'Garda Prasetyo'
+                    date_of_birth: '1975-09-30'
+                    email: trajata@example.com
+                    phone: '(+62) 392 4952 567'
+                    'description ': 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                    created_at: '2024-05-26T12:59:56.000000Z'
+                    updated_at: '2024-05-26T12:59:56.000000Z'
+                    rentals:
+                      -
+                        id: 6
+                        costumer_id: 1
+                        no_car: 2
+                        date_borrow: '2013-10-07'
+                        date_return: '2024-02-12'
+                        down_payment: 764
+                        discount: 10818
+                        total: '1555'
+                        created_at: '2024-05-26T12:59:57.000000Z'
+                        updated_at: '2024-05-26T12:59:57.000000Z'
+                      -
+                        id: 167
+                        costumer_id: 1
+                        no_car: 8
+                        date_borrow: '1944-12-11'
+                        date_return: '2024-04-29'
+                        down_payment: 2943
+                        discount: 2952949
+                        total: '564652'
+                        created_at: '2024-05-26T12:59:57.000000Z'
+                        updated_at: '2024-05-26T12:59:57.000000Z'
+                      -
+                        id: 178
+                        costumer_id: 1
+                        no_car: 4
+                        date_borrow: '2019-07-27'
+                        date_return: '2024-04-02'
+                        down_payment: 0
+                        discount: 223070379
+                        total: '798996009'
+                        created_at: '2024-05-26T12:59:57.000000Z'
+                        updated_at: '2024-05-26T12:59:57.000000Z'
+                      -
+                        id: 818
+                        costumer_id: 1
+                        no_car: 5
+                        date_borrow: '1947-11-18'
+                        date_return: '2024-02-09'
+                        down_payment: 18289
+                        discount: 2468263
+                        total: '914761'
+                        created_at: '2024-05-26T12:59:58.000000Z'
+                        updated_at: '2024-05-26T12:59:58.000000Z'
+                    returs: []
+                properties:
+                  message:
+                    type: string
+                    example: Success
+                  data:
+                    type: object
+                    properties:
+                      id:
+                        type: integer
+                        example: 1
+                      no_ktp:
+                        type: string
+                        example: '166363899931804'
+                      name:
+                        type: string
+                        example: 'Garda Prasetyo'
+                      date_of_birth:
+                        type: string
+                        example: '1975-09-30'
+                      email:
+                        type: string
+                        example: trajata@example.com
+                      phone:
+                        type: string
+                        example: '(+62) 392 4952 567'
+                      'description ':
+                        type: string
+                        example: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                      created_at:
+                        type: string
+                        example: '2024-05-26T12:59:56.000000Z'
+                      updated_at:
+                        type: string
+                        example: '2024-05-26T12:59:56.000000Z'
+                      rentals:
+                        type: array
+                        example:
+                          -
+                            id: 6
+                            costumer_id: 1
+                            no_car: 2
+                            date_borrow: '2013-10-07'
+                            date_return: '2024-02-12'
+                            down_payment: 764
+                            discount: 10818
+                            total: '1555'
+                            created_at: '2024-05-26T12:59:57.000000Z'
+                            updated_at: '2024-05-26T12:59:57.000000Z'
+                          -
+                            id: 167
+                            costumer_id: 1
+                            no_car: 8
+                            date_borrow: '1944-12-11'
+                            date_return: '2024-04-29'
+                            down_payment: 2943
+                            discount: 2952949
+                            total: '564652'
+                            created_at: '2024-05-26T12:59:57.000000Z'
+                            updated_at: '2024-05-26T12:59:57.000000Z'
+                          -
+                            id: 178
+                            costumer_id: 1
+                            no_car: 4
+                            date_borrow: '2019-07-27'
+                            date_return: '2024-04-02'
+                            down_payment: 0
+                            discount: 223070379
+                            total: '798996009'
+                            created_at: '2024-05-26T12:59:57.000000Z'
+                            updated_at: '2024-05-26T12:59:57.000000Z'
+                          -
+                            id: 818
+                            costumer_id: 1
+                            no_car: 5
+                            date_borrow: '1947-11-18'
+                            date_return: '2024-02-09'
+                            down_payment: 18289
+                            discount: 2468263
+                            total: '914761'
+                            created_at: '2024-05-26T12:59:58.000000Z'
+                            updated_at: '2024-05-26T12:59:58.000000Z'
+                        items:
+                          type: object
+                          properties:
+                            id:
+                              type: integer
+                              example: 6
+                            costumer_id:
+                              type: integer
+                              example: 1
+                            no_car:
+                              type: integer
+                              example: 2
+                            date_borrow:
+                              type: string
+                              example: '2013-10-07'
+                            date_return:
+                              type: string
+                              example: '2024-02-12'
+                            down_payment:
+                              type: integer
+                              example: 764
+                            discount:
+                              type: integer
+                              example: 10818
+                            total:
+                              type: string
+                              example: '1555'
+                            created_at:
+                              type: string
+                              example: '2024-05-26T12:59:57.000000Z'
+                            updated_at:
+                              type: string
+                              example: '2024-05-26T12:59:57.000000Z'
+                      returs:
+                        type: array
+                        example: []
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                no_ktp:
+                  type: string
+                  description: ''
+                  example: molestias
+                name:
+                  type: string
+                  description: ''
+                  example: nesciunt
+                date_of_birth:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:46'
+                email:
+                  type: string
+                  description: ''
+                  example: roel.howe@example.net
+                phone:
+                  type: string
+                  description: ''
+                  example: iste
+                description:
+                  type: string
+                  description: ''
+                  example: 'Perferendis et quam autem consequuntur in quisquam.'
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the costumer.'
+        example: 1
+        required: true
+        schema:
+          type: integer
+  /api/v1/return:
+    get:
+      summary: 'Display a listing of the resource.'
+      operationId: displayAListingOfTheResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Success
+                  data: []
+                properties:
+                  message:
+                    type: string
+                    example: Success
+                  data:
+                    type: array
+                    example: []
+      tags:
+        - Endpoints
+      security: []
+    post:
+      summary: 'Store a newly created resource in storage.'
+      operationId: storeANewlyCreatedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                costumer_id:
+                  type: integer
+                  description: ''
+                  example: 10
+                id_penalties:
+                  type: integer
+                  description: ''
+                  example: 17
+                date_borrow:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:46'
+                date_return:
+                  type: string
+                  description: 'Must be a valid date.'
+                  example: '2024-05-26T16:22:46'
+                discount:
+                  type: integer
+                  description: ''
+                  example: 2
+                total:
+                  type: integer
+                  description: ''
+                  example: 13
+              required:
+                - costumer_id
+                - id_penalties
+                - date_borrow
+                - date_return
+                - discount
+                - total
+      security: []
+  '/api/v1/return/{id}':
+    get:
+      summary: 'Display the specified resource.'
+      operationId: displayTheSpecifiedResource
+      description: ''
+      parameters: []
+      responses:
+        200:
+          description: ''
+          content:
+            application/json:
+              schema:
+                type: object
+                example:
+                  message: Success
+                  data: []
+                properties:
+                  message:
+                    type: string
+                    example: Success
+                  data:
+                    type: array
+                    example: []
+      tags:
+        - Endpoints
+      security: []
+    put:
+      summary: 'Update the specified resource in storage.'
+      operationId: updateTheSpecifiedResourceInStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    delete:
+      summary: 'Remove the specified resource from storage.'
+      operationId: removeTheSpecifiedResourceFromStorage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the return.'
+        example: 5
+        required: true
+        schema:
+          type: integer
+tags:
+  -
+    name: Endpoints
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: 'You can retrieve your token go to "https://apiproject/api/v1/auth/login" and pass the data into there.'
+security:
+  -
+    default: []
