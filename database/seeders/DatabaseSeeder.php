@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\Costumer;
 use App\Models\Rent;
+use App\Models\Retur;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -31,5 +32,7 @@ class DatabaseSeeder extends Seeder
         Costumer::factory(200)->create();
 
         Rent::factory(1000)->create();
+
+        // Retur::factory(10)->create();
     }
 }

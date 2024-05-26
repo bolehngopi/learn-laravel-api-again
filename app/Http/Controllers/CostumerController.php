@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Costumer;
 use App\Http\Requests\StoreCostumerRequest;
 use App\Http\Requests\UpdateCostumerRequest;
+use App\Http\Resources\CostumerResource;
 use Illuminate\Http\Request;
 
 class CostumerController extends Controller
@@ -18,7 +19,7 @@ class CostumerController extends Controller
         $costumers = Costumer::paginate($pageSize);
         return response()->json([
             'messages' => 'success',
-            'data' => $costumers
+            'data' => CostumerResource::collection($costumers)
         ]);
     }
 
@@ -35,7 +36,7 @@ class CostumerController extends Controller
 
             return response()->json([
                 'messages' => 'Data have been saved',
-                'data' => $costumer
+                'data' => CostumerResource::make($costumer)
             ], 200);
         }
 
@@ -49,9 +50,10 @@ class CostumerController extends Controller
      */
     public function show(Costumer $costumer)
     {
+        $costumer->load('rentals', 'returs');
         return response()->json([
             'message' => 'Successful',
-            'data' => $costumer
+            'data' => CostumerResource::make($costumer)
         ]);
     }
 
@@ -77,7 +79,7 @@ class CostumerController extends Controller
 
         return response()->json([
             'message' => 'Update successful',
-            'data' => $costumer
+            'data' => CostumerResource::make($costumer)
         ]);
     }
 

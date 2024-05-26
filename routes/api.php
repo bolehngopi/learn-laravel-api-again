@@ -3,6 +3,7 @@
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\CostumerController;
 use App\Http\Controllers\RentController;
+use App\Http\Controllers\ReturController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -34,6 +35,7 @@ Route::prefix('/v1')->group(function() {
         Route::apiResource('user', UserController::class);
         Route::apiResource('rent', RentController::class);
         Route::apiResource('costumer', CostumerController::class);
+        Route::apiResource('return', ReturController::class);
         // Route::apiResource('return', ReturCostumer::class);
     // });
     // Route::post('/register', [CostumerController::class, 'register'])->name('costumer.register');

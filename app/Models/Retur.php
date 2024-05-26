@@ -11,6 +11,7 @@ class Retur extends Model
 
     protected $fillable = [
         'costumer_id',
+        'no_car',
         'id_penalties',
         'date_borrow',
         'date_return',

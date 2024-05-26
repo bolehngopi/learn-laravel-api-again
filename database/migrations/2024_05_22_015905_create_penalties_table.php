@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->text('description')->nullable();
             $table->integer('no_car');
-            $table->integer('total');
+            $table->integer('total')->nullable();
             $table->timestamps();
         });
     }

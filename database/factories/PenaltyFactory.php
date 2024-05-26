@@ -18,9 +18,9 @@ class PenaltyFactory extends Factory
     {
         return [
             'name' => $this->faker->text(10),
-        'description' => $this->faker->text(50),
-        'no_car' => $this->faker->randomNumber(),
-        'total ' => $this->faker->randomNumber(),
+            'description' => $this->faker->text(50),
+            'no_car' => $this->faker->randomNumber(),
+            'total ' => $this->faker->randomNumber(),
         ];
     }
 }

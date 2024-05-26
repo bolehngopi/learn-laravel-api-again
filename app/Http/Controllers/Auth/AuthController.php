@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Resources\UserResource;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -25,7 +26,7 @@ class AuthController extends Controller
             $token = $user->createToken('apiToken')->plainTextToken;
             return response()->json([
                 'messages' => 'Login Success',
-                'data' => $credentials,
+                'data' => UserResource::make($user),
                 'token' => $token
             ], 200);
         }
@@ -49,7 +50,7 @@ class AuthController extends Controller
             $token = $user->createToken('apiToken')->plainTextToken;
             return response()->json([
                 'messages' => 'Login Success',
-                'data' => $credentials,
+                'data' => UserResource::make($user),
                 'token' => $token
             ], 201);
         }
@@ -65,7 +66,13 @@ class AuthController extends Controller
     public function logout(Request $request)
     {
         /** @var \App\Models\User $user */
-        $request->user()->currentAccessToken()->delete();
+        $token = $request->user()->currentAccessToken()->delete();
+
+        if (!$token) {
+            return response()->json([
+                'message' => 'Logout unsuccessful'
+            ], 400);
+        }
 
         return response()->json([
             'messages' => 'Logout successful'
