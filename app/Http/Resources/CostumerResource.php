@@ -17,7 +17,7 @@ class CostumerResource extends JsonResource
         return [
             // 'data' => [
                 'id' => $this->id,
-                'no_ktp' => $this->no_ktp,
+                'no_ktp' => (integer) $this->no_ktp,
                 'name' => $this->name,
                 'date_of_birth' => $this->date_of_birth,
                 'email' => $this->email,

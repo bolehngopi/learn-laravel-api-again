@@ -53,7 +53,7 @@ class CostumerController extends Controller
             return response()->json([
                 'messages' => 'Data have been saved',
                 'data' => CostumerResource::make($costumer)
-            ], 200);
+            ], 201);
         }
 
         return response()->json([
