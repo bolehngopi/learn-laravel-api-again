@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('no_ktp', 16);
             $table->string('name');
-            $table->date('date_of_birth');
+            $table->date('date_of_birth')->nullable();
             $table->string('email');
             $table->string('phone');
             $table->text('description')->nullable();
-            // $table->foreignId('user_id')->constrained('users');
+            $table->string('profile_image')->nullable();
             $table->timestamps();
         });
     }

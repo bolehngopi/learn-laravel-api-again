@@ -27,7 +27,8 @@ class UpdateCostumerRequest extends FormRequest
             'date_of_birth' => 'date',
             'email' => 'string',
             'phone' => 'string',
-            'description' => 'string'
+            'description' => 'string',
+            'profile_image' => 'image|mimes:png,jpg,jpeg|max:2048'
         ];
     }
 }
