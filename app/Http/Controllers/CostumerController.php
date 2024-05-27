@@ -25,6 +25,14 @@ class CostumerController extends Controller
 
     /**
      * Store a newly created resource in storage.
+     *
+     * @bodyParam no_ktp required string
+     * @bodyParam name required string
+     * @bodyParam date_of_birth string
+     * @bodyParam email string
+     * @bodyParam phone required string
+     * @bodyParam description string
+     * @bodyParam profile_image file
      */
     public function store(StoreCostumerRequest $request)
     {

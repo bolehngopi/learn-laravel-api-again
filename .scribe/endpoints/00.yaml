@@ -65,7 +65,7 @@ endpoints:
         name: username
         description: ''
         required: true
-        example: voluptatibus
+        example: ea
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -74,14 +74,74 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: .Ax^Grfo/
+        example: '[?9q</Gd'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      username: voluptatibus
-      password: .Ax^Grfo/
+      username: ea
+      password: '[?9q</Gd'
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/auth/register
+    metadata:
+      groupName: Endpoints
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: 'Register user and create token for user'
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      username:
+        name: username
+        description: ''
+        required: true
+        example: sequi
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      password:
+        name: password
+        description: ''
+        required: true
+        example: '*k^\r#-N{Mq!'
+        type: string
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+      isAdmin:
+        name: isAdmin
+        description: ''
+        required: false
+        example: false
+        type: boolean
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
+    cleanBodyParameters:
+      username: sequi
+      password: '*k^\r#-N{Mq!'
+      isAdmin: false
     fileParameters: []
     responses: []
     responseFields: []
@@ -99,7 +159,12 @@ endpoints:
       groupDescription: ''
       subgroup: ''
       subgroupDescription: ''
-      title: 'Logout user and delete token for user'
+      title: |-
+        <<<<<<< HEAD
+        Logout user and delete token for user
+        =======
+        Logout
+        >>>>>>> dev
       description: ''
       authenticated: true
       custom: []
@@ -119,7 +184,7 @@ endpoints:
     auth:
       - headers
       - Authorization
-      - 'Bearer vbfgkhca66P84Z53e1VadDE'
+      - 'Bearer adc6fk34eZg586aPVbhD1Ev'
     controller: null
     method: null
     route: null
@@ -150,7 +215,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"messages":"success","data":{"current_page":1,"data":[{"id":1,"no_ktp":"166363899931804","name":"Garda Prasetyo","date_of_birth":"1975-09-30","email":"trajata@example.com","phone":"(+62) 392 4952 567","description":"Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":2,"no_ktp":"317884785688321","name":"Puput Nasyidah","date_of_birth":"1979-05-24","email":"ssitumorang@example.net","phone":"0633 8917 070","description":"Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":3,"no_ktp":"897152731431219","name":"Ellis Lailasari","date_of_birth":"1993-03-29","email":"cici.safitri@example.com","phone":"(+62) 270 6975 732","description":"Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":4,"no_ktp":"513039062743979","name":"Almira Wulandari","date_of_birth":"1997-10-08","email":"efirgantoro@example.org","phone":"0832 6486 9870","description":"Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"}],"first_page_url":"http:\/\/apiproject.test\/api\/v1\/user?page=1","from":1,"last_page":50,"last_page_url":"http:\/\/apiproject.test\/api\/v1\/user?page=50","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=1","label":"1","active":true},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=2","label":"2","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=3","label":"3","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=4","label":"4","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=5","label":"5","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=6","label":"6","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=7","label":"7","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=8","label":"8","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=9","label":"9","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=10","label":"10","active":false},{"url":null,"label":"...","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=49","label":"49","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=50","label":"50","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/apiproject.test\/api\/v1\/user?page=2","path":"http:\/\/apiproject.test\/api\/v1\/user","per_page":4,"prev_page_url":null,"to":4,"total":200}}'
+        content: '{"messages":"success","data":{"current_page":1,"data":[{"id":1,"no_ktp":"830722372698928","name":"Ophelia Jamalia Riyanti S.Farm","date_of_birth":"1970-08-11","email":"uli.mustofa@example.org","phone":"(+62) 923 6767 9983","description":"Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":2,"no_ktp":"651651987632225","name":"Asman Salahudin","date_of_birth":"1976-02-18","email":"farah40@example.com","phone":"(+62) 450 5782 0018","description":"Eveniet omnis blanditiis dolores nobis. Quisquam magnam molestiae et nisi sit numquam. Qui et explicabo quae.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":3,"no_ktp":"660574217802770","name":"Lasmono Prasetyo","date_of_birth":"1997-06-15","email":"pwaluyo@example.org","phone":"(+62) 593 0842 001","description":"Quibusdam cumque ut quia sapiente. Quia quia magnam laborum dolore quidem qui et consequatur. Quod adipisci est voluptas mollitia sed sit.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":4,"no_ktp":"884386980151761","name":"Joko Lutfan Hutagalung S.H.","date_of_birth":"1970-03-08","email":"kunthara37@example.org","phone":"(+62) 366 3836 818","description":"Consequatur voluptates nemo explicabo et qui qui hic. Necessitatibus beatae voluptas voluptatem et iste rerum. Voluptatibus quisquam vel optio eos.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"}],"first_page_url":"http:\/\/apiproject.test\/api\/v1\/user?page=1","from":1,"last_page":51,"last_page_url":"http:\/\/apiproject.test\/api\/v1\/user?page=51","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=1","label":"1","active":true},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=2","label":"2","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=3","label":"3","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=4","label":"4","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=5","label":"5","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=6","label":"6","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=7","label":"7","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=8","label":"8","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=9","label":"9","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=10","label":"10","active":false},{"url":null,"label":"...","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=50","label":"50","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=51","label":"51","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/user?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/apiproject.test\/api\/v1\/user?page=2","path":"http:\/\/apiproject.test\/api\/v1\/user","per_page":4,"prev_page_url":null,"to":4,"total":202}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -350,13 +415,13 @@ endpoints:
         name: page_size
         description: "How big the data is. Defaults to '10'."
         required: false
-        example: odio
+        example: qui
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanQueryParameters:
-      page_size: odio
+      page_size: qui
     bodyParameters: []
     cleanBodyParameters: []
     fileParameters: []
@@ -887,7 +952,7 @@ endpoints:
         name: costumer_id
         description: ''
         required: true
-        example: 4
+        example: 7
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -896,7 +961,7 @@ endpoints:
         name: no_car
         description: ''
         required: true
-        example: 13
+        example: 2
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -905,7 +970,7 @@ endpoints:
         name: date_borrow
         description: 'Must be a valid date.'
         required: true
-        example: '2024-05-26T16:22:45'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -914,7 +979,7 @@ endpoints:
         name: date_return
         description: 'Must be a valid date.'
         required: true
-        example: '2024-05-26T16:22:45'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -923,7 +988,7 @@ endpoints:
         name: down_payment
         description: ''
         required: true
-        example: 1
+        example: 7
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -932,7 +997,7 @@ endpoints:
         name: discount
         description: ''
         required: true
-        example: 20
+        example: 14
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -941,19 +1006,19 @@ endpoints:
         name: total
         description: ''
         required: true
-        example: 18
+        example: 9
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      costumer_id: 4
-      no_car: 13
-      date_borrow: '2024-05-26T16:22:45'
-      date_return: '2024-05-26T16:22:45'
-      down_payment: 1
-      discount: 20
-      total: 18
+      costumer_id: 7
+      no_car: 2
+      date_borrow: '2024-05-27T05:16:45'
+      date_return: '2024-05-27T05:16:45'
+      down_payment: 7
+      discount: 14
+      total: 9
     fileParameters: []
     responses: []
     responseFields: []
@@ -998,7 +1063,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"message":"Success","data":{"id":1,"costumer_id":138,"no_car":3,"date_borrow":"1985-09-24","date_return":"2024-03-15","down_payment":65,"discount":157969,"total":"51791","created_at":"2024-05-26T12:59:57.000000Z","updated_at":"2024-05-26T12:59:57.000000Z"}}'
+        content: '{"message":"Success","data":{"id":1,"costumer_id":186,"no_car":6,"date_borrow":"1967-07-06","date_return":"2024-05-24","down_payment":783,"discount":778577,"total":"958061","created_at":"2024-05-27T04:15:25.000000Z","updated_at":"2024-05-27T04:15:25.000000Z"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1049,7 +1114,7 @@ endpoints:
         name: costumer_id
         description: ''
         required: false
-        example: 17
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1058,7 +1123,7 @@ endpoints:
         name: no_car
         description: ''
         required: false
-        example: 7
+        example: 8
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1067,7 +1132,7 @@ endpoints:
         name: date_borrow
         description: 'Must be a valid date.'
         required: false
-        example: '2024-05-26T16:22:45'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1076,7 +1141,7 @@ endpoints:
         name: date_return
         description: 'Must be a valid date.'
         required: false
-        example: '2024-05-26T16:22:45'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1085,7 +1150,7 @@ endpoints:
         name: down_payment
         description: ''
         required: false
-        example: 7
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1094,7 +1159,7 @@ endpoints:
         name: discount
         description: ''
         required: false
-        example: 7
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1103,19 +1168,19 @@ endpoints:
         name: total
         description: ''
         required: false
-        example: 15
+        example: 19
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      costumer_id: 17
-      no_car: 7
-      date_borrow: '2024-05-26T16:22:45'
-      date_return: '2024-05-26T16:22:45'
-      down_payment: 7
-      discount: 7
-      total: 15
+      costumer_id: 13
+      no_car: 8
+      date_borrow: '2024-05-27T05:16:45'
+      date_return: '2024-05-27T05:16:45'
+      down_payment: 13
+      discount: 13
+      total: 19
     fileParameters: []
     responses: []
     responseFields: []
@@ -1190,7 +1255,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"messages":"success","data":{"current_page":1,"data":[{"id":1,"no_ktp":"166363899931804","name":"Garda Prasetyo","date_of_birth":"1975-09-30","email":"trajata@example.com","phone":"(+62) 392 4952 567","description":"Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":2,"no_ktp":"317884785688321","name":"Puput Nasyidah","date_of_birth":"1979-05-24","email":"ssitumorang@example.net","phone":"0633 8917 070","description":"Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":3,"no_ktp":"897152731431219","name":"Ellis Lailasari","date_of_birth":"1993-03-29","email":"cici.safitri@example.com","phone":"(+62) 270 6975 732","description":"Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":4,"no_ktp":"513039062743979","name":"Almira Wulandari","date_of_birth":"1997-10-08","email":"efirgantoro@example.org","phone":"0832 6486 9870","description":"Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":5,"no_ktp":"453818582287698","name":"Mahesa Hutagalung","date_of_birth":"2020-03-30","email":"vnasyiah@example.net","phone":"0317 7262 3110","description":"Est consequatur dicta et est harum dolor dolor quos. Recusandae et commodi adipisci tempore temporibus voluptate incidunt at. Minima expedita eaque reiciendis assumenda.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":6,"no_ktp":"360454731823249","name":"Yessi Padmasari","date_of_birth":"1986-08-10","email":"farida.azalea@example.net","phone":"(+62) 827 4053 1233","description":"Sit est aut vero voluptatem eaque ad optio. Nobis repellendus quis totam laudantium provident deleniti. Quia dicta et et quo autem est velit.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":7,"no_ktp":"302824082987660","name":"Edi Jasmani Manullang","date_of_birth":"1994-02-09","email":"halima.natsir@example.net","phone":"0636 3514 4632","description":"Qui neque magnam voluptatem eos ut quo eius non. Quis et ut totam pariatur aut. Nihil occaecati corrupti repudiandae quia architecto.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":8,"no_ktp":"750261365811808","name":"Zamira Suartini","date_of_birth":"1990-09-26","email":"vanesa.yuliarti@example.org","phone":"0330 3103 248","description":"In porro dolorum natus et modi ut cum. Iste necessitatibus earum eaque ad. Ex facere dolorem deserunt et eius voluptates.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":9,"no_ktp":"869505846000205","name":"Kardi Manullang","date_of_birth":"2003-07-14","email":"hassanah.rini@example.net","phone":"0266 2281 5236","description":"Necessitatibus rerum incidunt autem cum ut. Modi dolores qui ut illum et. Quibusdam ut magnam voluptate iusto reprehenderit ab natus. Dolores architecto quasi rerum ipsam dolorem et.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"},{"id":10,"no_ktp":"63427351429694","name":"Elisa Belinda Namaga S.Pd","date_of_birth":"1992-03-26","email":"kacung62@example.com","phone":"(+62) 529 0956 4505","description":"Dicta natus pariatur sed in. Architecto eaque amet non et nisi recusandae. Expedita numquam inventore placeat omnis. Qui harum sapiente voluptatibus aperiam.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z"}],"first_page_url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=1","from":1,"last_page":20,"last_page_url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=20","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=1","label":"1","active":true},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=2","label":"2","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=3","label":"3","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=4","label":"4","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=5","label":"5","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=6","label":"6","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=7","label":"7","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=8","label":"8","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=9","label":"9","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=10","label":"10","active":false},{"url":null,"label":"...","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=19","label":"19","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=20","label":"20","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=2","path":"http:\/\/apiproject.test\/api\/v1\/costumer","per_page":10,"prev_page_url":null,"to":10,"total":200}}'
+        content: '{"messages":"success","data":{"current_page":1,"data":[{"id":1,"no_ktp":"830722372698928","name":"Ophelia Jamalia Riyanti S.Farm","date_of_birth":"1970-08-11","email":"uli.mustofa@example.org","phone":"(+62) 923 6767 9983","description":"Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":2,"no_ktp":"651651987632225","name":"Asman Salahudin","date_of_birth":"1976-02-18","email":"farah40@example.com","phone":"(+62) 450 5782 0018","description":"Eveniet omnis blanditiis dolores nobis. Quisquam magnam molestiae et nisi sit numquam. Qui et explicabo quae.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":3,"no_ktp":"660574217802770","name":"Lasmono Prasetyo","date_of_birth":"1997-06-15","email":"pwaluyo@example.org","phone":"(+62) 593 0842 001","description":"Quibusdam cumque ut quia sapiente. Quia quia magnam laborum dolore quidem qui et consequatur. Quod adipisci est voluptas mollitia sed sit.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":4,"no_ktp":"884386980151761","name":"Joko Lutfan Hutagalung S.H.","date_of_birth":"1970-03-08","email":"kunthara37@example.org","phone":"(+62) 366 3836 818","description":"Consequatur voluptates nemo explicabo et qui qui hic. Necessitatibus beatae voluptas voluptatem et iste rerum. Voluptatibus quisquam vel optio eos.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":5,"no_ktp":"954117755733620","name":"Embuh Suwarno","date_of_birth":"1999-12-06","email":"waluyo.tasnim@example.org","phone":"(+62) 470 1803 9955","description":"Suscipit ea illum quae rerum est dicta. Rerum voluptate sapiente aut aut odio vel nam. Qui earum quisquam vitae dolorem cum nobis hic.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":6,"no_ktp":"320026409669994","name":"Gada Saputra M.TI.","date_of_birth":"1973-05-17","email":"wardi48@example.net","phone":"0536 2896 940","description":"Eum molestiae perspiciatis qui unde. Sunt aspernatur perferendis sunt. In laudantium laboriosam esse voluptatem aspernatur. Ipsam aspernatur qui velit voluptatum ipsam placeat tenetur.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":7,"no_ktp":"509341436963984","name":"Mujur Jabal Kurniawan S.Kom","date_of_birth":"1977-10-14","email":"rhastuti@example.org","phone":"(+62) 734 3094 0917","description":"Voluptas velit iure qui qui nobis nihil mollitia qui. Quis aut dolorum vero quia ut ullam facere amet. Rerum vitae ut eveniet sint quis.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":8,"no_ktp":"869902579654509","name":"Julia Sudiati","date_of_birth":"2009-03-25","email":"almira82@example.net","phone":"0945 6593 484","description":"Ad architecto quo ex minus distinctio incidunt tenetur. Molestias dolor neque non esse et nesciunt ducimus.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":9,"no_ktp":"252704304771376","name":"Gaiman Marpaung","date_of_birth":"1972-10-05","email":"jtamba@example.com","phone":"(+62) 670 8420 4785","description":"Minima quasi facere corporis labore. Est illo officia quia possimus quod sapiente. Aut qui delectus est adipisci et voluptatem accusamus.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"},{"id":10,"no_ktp":"344525914688688","name":"Karsa Hidayat S.Gz","date_of_birth":"1987-06-28","email":"zulaika.yuni@example.org","phone":"0877 9338 121","description":"Aliquid esse soluta cumque. Sunt quia corporis sit expedita. Sed eum voluptatem sequi est. Ex tempore voluptatem facere sequi soluta iste corrupti. Eveniet qui sed est.","profile_image":null,"created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z"}],"first_page_url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=1","from":1,"last_page":21,"last_page_url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=21","links":[{"url":null,"label":"&laquo; Previous","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=1","label":"1","active":true},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=2","label":"2","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=3","label":"3","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=4","label":"4","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=5","label":"5","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=6","label":"6","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=7","label":"7","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=8","label":"8","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=9","label":"9","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=10","label":"10","active":false},{"url":null,"label":"...","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=20","label":"20","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=21","label":"21","active":false},{"url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=2","label":"Next &raquo;","active":false}],"next_page_url":"http:\/\/apiproject.test\/api\/v1\/costumer?page=2","path":"http:\/\/apiproject.test\/api\/v1\/costumer","per_page":10,"prev_page_url":null,"to":10,"total":202}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1219,7 +1284,7 @@ endpoints:
       authenticated: false
       custom: []
     headers:
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
     urlParameters: []
     cleanUrlParameters: []
@@ -1228,27 +1293,27 @@ endpoints:
     bodyParameters:
       no_ktp:
         name: no_ktp
-        description: ''
-        required: true
-        example: illum
-        type: string
+        description: string
+        required: false
+        example: qui
+        type: required
         enumValues: []
         exampleWasSpecified: false
         custom: []
       name:
         name: name
-        description: ''
-        required: true
-        example: impedit
-        type: string
+        description: string
+        required: false
+        example: praesentium
+        type: required
         enumValues: []
         exampleWasSpecified: false
         custom: []
       date_of_birth:
         name: date_of_birth
-        description: 'Must be a valid date.'
-        required: true
-        example: '2024-05-26T16:22:46'
+        description: ''
+        required: false
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1257,17 +1322,17 @@ endpoints:
         name: email
         description: ''
         required: false
-        example: windler.dax@example.net
+        example: angelita.lemke@example.net
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
       phone:
         name: phone
-        description: ''
-        required: true
-        example: exercitationem
-        type: string
+        description: string
+        required: false
+        example: rerum
+        type: required
         enumValues: []
         exampleWasSpecified: false
         custom: []
@@ -1275,19 +1340,29 @@ endpoints:
         name: description
         description: ''
         required: false
-        example: 'Iure velit nisi omnis distinctio sit voluptatem.'
+        example: 'Dolorem incidunt omnis incidunt omnis.'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
+      profile_image:
+        name: profile_image
+        description: ''
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
     cleanBodyParameters:
-      no_ktp: illum
-      name: impedit
-      date_of_birth: '2024-05-26T16:22:46'
-      email: windler.dax@example.net
-      phone: exercitationem
-      description: 'Iure velit nisi omnis distinctio sit voluptatem.'
-    fileParameters: []
+      no_ktp: qui
+      name: praesentium
+      date_of_birth: est
+      email: angelita.lemke@example.net
+      phone: rerum
+      description: 'Dolorem incidunt omnis incidunt omnis.'
+    fileParameters:
+      profile_image: null
     responses: []
     responseFields: []
     auth: []
@@ -1331,7 +1406,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"message":"Success","data":{"id":1,"no_ktp":"166363899931804","name":"Garda Prasetyo","date_of_birth":"1975-09-30","email":"trajata@example.com","phone":"(+62) 392 4952 567","description ":"Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.","created_at":"2024-05-26T12:59:56.000000Z","updated_at":"2024-05-26T12:59:56.000000Z","rentals":[{"id":6,"costumer_id":1,"no_car":2,"date_borrow":"2013-10-07","date_return":"2024-02-12","down_payment":764,"discount":10818,"total":"1555","created_at":"2024-05-26T12:59:57.000000Z","updated_at":"2024-05-26T12:59:57.000000Z"},{"id":167,"costumer_id":1,"no_car":8,"date_borrow":"1944-12-11","date_return":"2024-04-29","down_payment":2943,"discount":2952949,"total":"564652","created_at":"2024-05-26T12:59:57.000000Z","updated_at":"2024-05-26T12:59:57.000000Z"},{"id":178,"costumer_id":1,"no_car":4,"date_borrow":"2019-07-27","date_return":"2024-04-02","down_payment":0,"discount":223070379,"total":"798996009","created_at":"2024-05-26T12:59:57.000000Z","updated_at":"2024-05-26T12:59:57.000000Z"},{"id":818,"costumer_id":1,"no_car":5,"date_borrow":"1947-11-18","date_return":"2024-02-09","down_payment":18289,"discount":2468263,"total":"914761","created_at":"2024-05-26T12:59:58.000000Z","updated_at":"2024-05-26T12:59:58.000000Z"}],"returs":[]}}'
+        content: '{"message":"Success","data":{"id":1,"no_ktp":"830722372698928","name":"Ophelia Jamalia Riyanti S.Farm","date_of_birth":"1970-08-11","email":"uli.mustofa@example.org","phone":"(+62) 923 6767 9983","description ":"Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.","created_at":"2024-05-27T04:15:24.000000Z","updated_at":"2024-05-27T04:15:24.000000Z","rentals":[{"id":56,"costumer_id":1,"no_car":6,"date_borrow":"1986-05-02","date_return":"2024-05-20","down_payment":7644,"discount":646653926,"total":"47423714","created_at":"2024-05-27T04:15:25.000000Z","updated_at":"2024-05-27T04:15:25.000000Z"},{"id":146,"costumer_id":1,"no_car":3,"date_borrow":"2005-06-04","date_return":"2024-03-20","down_payment":76141172,"discount":549195,"total":"456","created_at":"2024-05-27T04:15:25.000000Z","updated_at":"2024-05-27T04:15:25.000000Z"},{"id":513,"costumer_id":1,"no_car":7,"date_borrow":"1948-03-28","date_return":"2024-04-13","down_payment":72195,"discount":981095516,"total":"620546","created_at":"2024-05-27T04:15:25.000000Z","updated_at":"2024-05-27T04:15:25.000000Z"},{"id":721,"costumer_id":1,"no_car":8,"date_borrow":"2016-10-12","date_return":"2024-03-06","down_payment":7849974,"discount":36,"total":"82","created_at":"2024-05-27T04:15:26.000000Z","updated_at":"2024-05-27T04:15:26.000000Z"},{"id":845,"costumer_id":1,"no_car":3,"date_borrow":"1948-04-03","date_return":"2024-01-25","down_payment":75832561,"discount":5,"total":"339904057","created_at":"2024-05-27T04:15:26.000000Z","updated_at":"2024-05-27T04:15:26.000000Z"},{"id":852,"costumer_id":1,"no_car":1,"date_borrow":"1939-11-14","date_return":"2024-04-06","down_payment":12215862,"discount":927678640,"total":"70193315","created_at":"2024-05-27T04:15:26.000000Z","updated_at":"2024-05-27T04:15:26.000000Z"}],"returs":[]}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -1361,7 +1436,7 @@ endpoints:
       authenticated: false
       custom: []
     headers:
-      Content-Type: application/json
+      Content-Type: multipart/form-data
       Accept: application/json
     urlParameters:
       id:
@@ -1382,7 +1457,7 @@ endpoints:
         name: no_ktp
         description: ''
         required: false
-        example: molestias
+        example: est
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1391,7 +1466,7 @@ endpoints:
         name: name
         description: ''
         required: false
-        example: nesciunt
+        example: minima
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1400,7 +1475,7 @@ endpoints:
         name: date_of_birth
         description: 'Must be a valid date.'
         required: false
-        example: '2024-05-26T16:22:46'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1409,7 +1484,7 @@ endpoints:
         name: email
         description: ''
         required: false
-        example: roel.howe@example.net
+        example: vhowe@example.net
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1418,7 +1493,7 @@ endpoints:
         name: phone
         description: ''
         required: false
-        example: iste
+        example: et
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1427,19 +1502,29 @@ endpoints:
         name: description
         description: ''
         required: false
-        example: 'Perferendis et quam autem consequuntur in quisquam.'
+        example: 'Quibusdam eius omnis distinctio consequatur et perspiciatis.'
         type: string
         enumValues: []
         exampleWasSpecified: false
         custom: []
+      profile_image:
+        name: profile_image
+        description: 'Must be an image. Must not be greater than 2048 kilobytes.'
+        required: false
+        example: null
+        type: file
+        enumValues: []
+        exampleWasSpecified: false
+        custom: []
     cleanBodyParameters:
-      no_ktp: molestias
-      name: nesciunt
-      date_of_birth: '2024-05-26T16:22:46'
-      email: roel.howe@example.net
-      phone: iste
-      description: 'Perferendis et quam autem consequuntur in quisquam.'
-    fileParameters: []
+      no_ktp: est
+      name: minima
+      date_of_birth: '2024-05-27T05:16:45'
+      email: vhowe@example.net
+      phone: et
+      description: 'Quibusdam eius omnis distinctio consequatur et perspiciatis.'
+    fileParameters:
+      profile_image: null
     responses: []
     responseFields: []
     auth: []
@@ -1553,7 +1638,7 @@ endpoints:
         name: costumer_id
         description: ''
         required: true
-        example: 10
+        example: 20
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1562,7 +1647,7 @@ endpoints:
         name: id_penalties
         description: ''
         required: true
-        example: 17
+        example: 13
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1571,7 +1656,7 @@ endpoints:
         name: date_borrow
         description: 'Must be a valid date.'
         required: true
-        example: '2024-05-26T16:22:46'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1580,7 +1665,7 @@ endpoints:
         name: date_return
         description: 'Must be a valid date.'
         required: true
-        example: '2024-05-26T16:22:46'
+        example: '2024-05-27T05:16:45'
         type: string
         enumValues: []
         exampleWasSpecified: false
@@ -1589,7 +1674,7 @@ endpoints:
         name: discount
         description: ''
         required: true
-        example: 2
+        example: 7
         type: integer
         enumValues: []
         exampleWasSpecified: false
@@ -1598,18 +1683,18 @@ endpoints:
         name: total
         description: ''
         required: true
-        example: 13
+        example: 8
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanBodyParameters:
-      costumer_id: 10
-      id_penalties: 17
-      date_borrow: '2024-05-26T16:22:46'
-      date_return: '2024-05-26T16:22:46'
-      discount: 2
-      total: 13
+      costumer_id: 20
+      id_penalties: 13
+      date_borrow: '2024-05-27T05:16:45'
+      date_return: '2024-05-27T05:16:45'
+      discount: 7
+      total: 8
     fileParameters: []
     responses: []
     responseFields: []
@@ -1639,13 +1724,13 @@ endpoints:
         name: id
         description: 'The ID of the return.'
         required: true
-        example: 5
+        example: 19
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: 5
+      id: 19
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1691,13 +1776,13 @@ endpoints:
         name: id
         description: 'The ID of the return.'
         required: true
-        example: 12
+        example: 17
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: 12
+      id: 17
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -1731,13 +1816,13 @@ endpoints:
         name: id
         description: 'The ID of the return.'
         required: true
-        example: 6
+        example: 17
         type: integer
         enumValues: []
         exampleWasSpecified: false
         custom: []
     cleanUrlParameters:
-      id: 6
+      id: 17
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

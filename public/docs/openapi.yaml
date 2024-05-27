@@ -48,19 +48,51 @@ paths:
                 username:
                   type: string
                   description: ''
-                  example: voluptatibus
+                  example: ea
                 password:
                   type: string
                   description: ''
-                  example: .Ax^Grfo/
+                  example: '[?9q</Gd'
+              required:
+                - username
+                - password
+      security: []
+  /api/v1/auth/register:
+    post:
+      summary: 'Register user and create token for user'
+      operationId: registerUserAndCreateTokenForUser
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Endpoints
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
+                  type: string
+                  description: ''
+                  example: sequi
+                password:
+                  type: string
+                  description: ''
+                  example: '*k^\r#-N{Mq!'
+                isAdmin:
+                  type: boolean
+                  description: ''
+                  example: false
               required:
                 - username
                 - password
       security: []
   /api/v1/auth/logout:
     post:
-      summary: 'Logout user and delete token for user'
-      operationId: logoutUserAndDeleteTokenForUser
+      summary: "<<<<<<< HEAD\nLogout user and delete token for user\n=======\nLogout\n>>>>>>> dev"
+      operationId: HEADLogoutUserAndDeleteTokenForUserLogoutDev
       description: ''
       parameters: []
       responses: {  }
@@ -86,48 +118,52 @@ paths:
                     data:
                       -
                         id: 1
-                        no_ktp: '166363899931804'
-                        name: 'Garda Prasetyo'
-                        date_of_birth: '1975-09-30'
-                        email: trajata@example.com
-                        phone: '(+62) 392 4952 567'
-                        description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '830722372698928'
+                        name: 'Ophelia Jamalia Riyanti S.Farm'
+                        date_of_birth: '1970-08-11'
+                        email: uli.mustofa@example.org
+                        phone: '(+62) 923 6767 9983'
+                        description: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 2
-                        no_ktp: '317884785688321'
-                        name: 'Puput Nasyidah'
-                        date_of_birth: '1979-05-24'
-                        email: ssitumorang@example.net
-                        phone: '0633 8917 070'
-                        description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '651651987632225'
+                        name: 'Asman Salahudin'
+                        date_of_birth: '1976-02-18'
+                        email: farah40@example.com
+                        phone: '(+62) 450 5782 0018'
+                        description: 'Eveniet omnis blanditiis dolores nobis. Quisquam magnam molestiae et nisi sit numquam. Qui et explicabo quae.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 3
-                        no_ktp: '897152731431219'
-                        name: 'Ellis Lailasari'
-                        date_of_birth: '1993-03-29'
-                        email: cici.safitri@example.com
-                        phone: '(+62) 270 6975 732'
-                        description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '660574217802770'
+                        name: 'Lasmono Prasetyo'
+                        date_of_birth: '1997-06-15'
+                        email: pwaluyo@example.org
+                        phone: '(+62) 593 0842 001'
+                        description: 'Quibusdam cumque ut quia sapiente. Quia quia magnam laborum dolore quidem qui et consequatur. Quod adipisci est voluptas mollitia sed sit.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 4
-                        no_ktp: '513039062743979'
-                        name: 'Almira Wulandari'
-                        date_of_birth: '1997-10-08'
-                        email: efirgantoro@example.org
-                        phone: '0832 6486 9870'
-                        description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '884386980151761'
+                        name: 'Joko Lutfan Hutagalung S.H.'
+                        date_of_birth: '1970-03-08'
+                        email: kunthara37@example.org
+                        phone: '(+62) 366 3836 818'
+                        description: 'Consequatur voluptates nemo explicabo et qui qui hic. Necessitatibus beatae voluptas voluptatem et iste rerum. Voluptatibus quisquam vel optio eos.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                     first_page_url: 'http://apiproject.test/api/v1/user?page=1'
                     from: 1
-                    last_page: 50
-                    last_page_url: 'http://apiproject.test/api/v1/user?page=50'
+                    last_page: 51
+                    last_page_url: 'http://apiproject.test/api/v1/user?page=51'
                     links:
                       -
                         url: null
@@ -178,12 +214,12 @@ paths:
                         label: ...
                         active: false
                       -
-                        url: 'http://apiproject.test/api/v1/user?page=49'
-                        label: '49'
-                        active: false
-                      -
                         url: 'http://apiproject.test/api/v1/user?page=50'
                         label: '50'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/user?page=51'
+                        label: '51'
                         active: false
                       -
                         url: 'http://apiproject.test/api/v1/user?page=2'
@@ -194,7 +230,7 @@ paths:
                     per_page: 4
                     prev_page_url: null
                     to: 4
-                    total: 200
+                    total: 202
                 properties:
                   messages:
                     type: string
@@ -210,44 +246,48 @@ paths:
                         example:
                           -
                             id: 1
-                            no_ktp: '166363899931804'
-                            name: 'Garda Prasetyo'
-                            date_of_birth: '1975-09-30'
-                            email: trajata@example.com
-                            phone: '(+62) 392 4952 567'
-                            description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '830722372698928'
+                            name: 'Ophelia Jamalia Riyanti S.Farm'
+                            date_of_birth: '1970-08-11'
+                            email: uli.mustofa@example.org
+                            phone: '(+62) 923 6767 9983'
+                            description: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 2
-                            no_ktp: '317884785688321'
-                            name: 'Puput Nasyidah'
-                            date_of_birth: '1979-05-24'
-                            email: ssitumorang@example.net
-                            phone: '0633 8917 070'
-                            description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '651651987632225'
+                            name: 'Asman Salahudin'
+                            date_of_birth: '1976-02-18'
+                            email: farah40@example.com
+                            phone: '(+62) 450 5782 0018'
+                            description: 'Eveniet omnis blanditiis dolores nobis. Quisquam magnam molestiae et nisi sit numquam. Qui et explicabo quae.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 3
-                            no_ktp: '897152731431219'
-                            name: 'Ellis Lailasari'
-                            date_of_birth: '1993-03-29'
-                            email: cici.safitri@example.com
-                            phone: '(+62) 270 6975 732'
-                            description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '660574217802770'
+                            name: 'Lasmono Prasetyo'
+                            date_of_birth: '1997-06-15'
+                            email: pwaluyo@example.org
+                            phone: '(+62) 593 0842 001'
+                            description: 'Quibusdam cumque ut quia sapiente. Quia quia magnam laborum dolore quidem qui et consequatur. Quod adipisci est voluptas mollitia sed sit.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 4
-                            no_ktp: '513039062743979'
-                            name: 'Almira Wulandari'
-                            date_of_birth: '1997-10-08'
-                            email: efirgantoro@example.org
-                            phone: '0832 6486 9870'
-                            description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '884386980151761'
+                            name: 'Joko Lutfan Hutagalung S.H.'
+                            date_of_birth: '1970-03-08'
+                            email: kunthara37@example.org
+                            phone: '(+62) 366 3836 818'
+                            description: 'Consequatur voluptates nemo explicabo et qui qui hic. Necessitatibus beatae voluptas voluptatem et iste rerum. Voluptatibus quisquam vel optio eos.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                         items:
                           type: object
                           properties:
@@ -256,28 +296,31 @@ paths:
                               example: 1
                             no_ktp:
                               type: string
-                              example: '166363899931804'
+                              example: '830722372698928'
                             name:
                               type: string
-                              example: 'Garda Prasetyo'
+                              example: 'Ophelia Jamalia Riyanti S.Farm'
                             date_of_birth:
                               type: string
-                              example: '1975-09-30'
+                              example: '1970-08-11'
                             email:
                               type: string
-                              example: trajata@example.com
+                              example: uli.mustofa@example.org
                             phone:
                               type: string
-                              example: '(+62) 392 4952 567'
+                              example: '(+62) 923 6767 9983'
                             description:
                               type: string
-                              example: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                              example: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                            profile_image:
+                              type: string
+                              example: null
                             created_at:
                               type: string
-                              example: '2024-05-26T12:59:56.000000Z'
+                              example: '2024-05-27T04:15:24.000000Z'
                             updated_at:
                               type: string
-                              example: '2024-05-26T12:59:56.000000Z'
+                              example: '2024-05-27T04:15:24.000000Z'
                       first_page_url:
                         type: string
                         example: 'http://apiproject.test/api/v1/user?page=1'
@@ -286,10 +329,10 @@ paths:
                         example: 1
                       last_page:
                         type: integer
-                        example: 50
+                        example: 51
                       last_page_url:
                         type: string
-                        example: 'http://apiproject.test/api/v1/user?page=50'
+                        example: 'http://apiproject.test/api/v1/user?page=51'
                       links:
                         type: array
                         example:
@@ -342,12 +385,12 @@ paths:
                             label: ...
                             active: false
                           -
-                            url: 'http://apiproject.test/api/v1/user?page=49'
-                            label: '49'
-                            active: false
-                          -
                             url: 'http://apiproject.test/api/v1/user?page=50'
                             label: '50'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/user?page=51'
+                            label: '51'
                             active: false
                           -
                             url: 'http://apiproject.test/api/v1/user?page=2'
@@ -382,7 +425,7 @@ paths:
                         example: 4
                       total:
                         type: integer
-                        example: 200
+                        example: 202
       tags:
         - Endpoints
       security: []
@@ -449,12 +492,12 @@ paths:
           in: query
           name: page_size
           description: "How big the data is. Defaults to '10'."
-          example: odio
+          example: qui
           required: false
           schema:
             type: string
             description: "How big the data is. Defaults to '10'."
-            example: odio
+            example: qui
       responses:
         500:
           description: ''
@@ -1339,31 +1382,31 @@ paths:
                 costumer_id:
                   type: integer
                   description: ''
-                  example: 4
+                  example: 7
                 no_car:
                   type: integer
                   description: ''
-                  example: 13
+                  example: 2
                 date_borrow:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:45'
+                  example: '2024-05-27T05:16:45'
                 date_return:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:45'
+                  example: '2024-05-27T05:16:45'
                 down_payment:
                   type: integer
                   description: ''
-                  example: 1
+                  example: 7
                 discount:
                   type: integer
                   description: ''
-                  example: 20
+                  example: 14
                 total:
                   type: integer
                   description: ''
-                  example: 18
+                  example: 9
               required:
                 - costumer_id
                 - no_car
@@ -1390,15 +1433,15 @@ paths:
                   message: Success
                   data:
                     id: 1
-                    costumer_id: 138
-                    no_car: 3
-                    date_borrow: '1985-09-24'
-                    date_return: '2024-03-15'
-                    down_payment: 65
-                    discount: 157969
-                    total: '51791'
-                    created_at: '2024-05-26T12:59:57.000000Z'
-                    updated_at: '2024-05-26T12:59:57.000000Z'
+                    costumer_id: 186
+                    no_car: 6
+                    date_borrow: '1967-07-06'
+                    date_return: '2024-05-24'
+                    down_payment: 783
+                    discount: 778577
+                    total: '958061'
+                    created_at: '2024-05-27T04:15:25.000000Z'
+                    updated_at: '2024-05-27T04:15:25.000000Z'
                 properties:
                   message:
                     type: string
@@ -1411,31 +1454,31 @@ paths:
                         example: 1
                       costumer_id:
                         type: integer
-                        example: 138
+                        example: 186
                       no_car:
                         type: integer
-                        example: 3
+                        example: 6
                       date_borrow:
                         type: string
-                        example: '1985-09-24'
+                        example: '1967-07-06'
                       date_return:
                         type: string
-                        example: '2024-03-15'
+                        example: '2024-05-24'
                       down_payment:
                         type: integer
-                        example: 65
+                        example: 783
                       discount:
                         type: integer
-                        example: 157969
+                        example: 778577
                       total:
                         type: string
-                        example: '51791'
+                        example: '958061'
                       created_at:
                         type: string
-                        example: '2024-05-26T12:59:57.000000Z'
+                        example: '2024-05-27T04:15:25.000000Z'
                       updated_at:
                         type: string
-                        example: '2024-05-26T12:59:57.000000Z'
+                        example: '2024-05-27T04:15:25.000000Z'
       tags:
         - Endpoints
       security: []
@@ -1457,31 +1500,31 @@ paths:
                 costumer_id:
                   type: integer
                   description: ''
-                  example: 17
+                  example: 13
                 no_car:
                   type: integer
                   description: ''
-                  example: 7
+                  example: 8
                 date_borrow:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:45'
+                  example: '2024-05-27T05:16:45'
                 date_return:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:45'
+                  example: '2024-05-27T05:16:45'
                 down_payment:
                   type: integer
                   description: ''
-                  example: 7
+                  example: 13
                 discount:
                   type: integer
                   description: ''
-                  example: 7
+                  example: 13
                 total:
                   type: integer
                   description: ''
-                  example: 15
+                  example: 19
       security: []
     delete:
       summary: 'Remove the specified resource from storage.'
@@ -1521,108 +1564,118 @@ paths:
                     data:
                       -
                         id: 1
-                        no_ktp: '166363899931804'
-                        name: 'Garda Prasetyo'
-                        date_of_birth: '1975-09-30'
-                        email: trajata@example.com
-                        phone: '(+62) 392 4952 567'
-                        description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '830722372698928'
+                        name: 'Ophelia Jamalia Riyanti S.Farm'
+                        date_of_birth: '1970-08-11'
+                        email: uli.mustofa@example.org
+                        phone: '(+62) 923 6767 9983'
+                        description: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 2
-                        no_ktp: '317884785688321'
-                        name: 'Puput Nasyidah'
-                        date_of_birth: '1979-05-24'
-                        email: ssitumorang@example.net
-                        phone: '0633 8917 070'
-                        description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '651651987632225'
+                        name: 'Asman Salahudin'
+                        date_of_birth: '1976-02-18'
+                        email: farah40@example.com
+                        phone: '(+62) 450 5782 0018'
+                        description: 'Eveniet omnis blanditiis dolores nobis. Quisquam magnam molestiae et nisi sit numquam. Qui et explicabo quae.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 3
-                        no_ktp: '897152731431219'
-                        name: 'Ellis Lailasari'
-                        date_of_birth: '1993-03-29'
-                        email: cici.safitri@example.com
-                        phone: '(+62) 270 6975 732'
-                        description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '660574217802770'
+                        name: 'Lasmono Prasetyo'
+                        date_of_birth: '1997-06-15'
+                        email: pwaluyo@example.org
+                        phone: '(+62) 593 0842 001'
+                        description: 'Quibusdam cumque ut quia sapiente. Quia quia magnam laborum dolore quidem qui et consequatur. Quod adipisci est voluptas mollitia sed sit.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 4
-                        no_ktp: '513039062743979'
-                        name: 'Almira Wulandari'
-                        date_of_birth: '1997-10-08'
-                        email: efirgantoro@example.org
-                        phone: '0832 6486 9870'
-                        description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '884386980151761'
+                        name: 'Joko Lutfan Hutagalung S.H.'
+                        date_of_birth: '1970-03-08'
+                        email: kunthara37@example.org
+                        phone: '(+62) 366 3836 818'
+                        description: 'Consequatur voluptates nemo explicabo et qui qui hic. Necessitatibus beatae voluptas voluptatem et iste rerum. Voluptatibus quisquam vel optio eos.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 5
-                        no_ktp: '453818582287698'
-                        name: 'Mahesa Hutagalung'
-                        date_of_birth: '2020-03-30'
-                        email: vnasyiah@example.net
-                        phone: '0317 7262 3110'
-                        description: 'Est consequatur dicta et est harum dolor dolor quos. Recusandae et commodi adipisci tempore temporibus voluptate incidunt at. Minima expedita eaque reiciendis assumenda.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '954117755733620'
+                        name: 'Embuh Suwarno'
+                        date_of_birth: '1999-12-06'
+                        email: waluyo.tasnim@example.org
+                        phone: '(+62) 470 1803 9955'
+                        description: 'Suscipit ea illum quae rerum est dicta. Rerum voluptate sapiente aut aut odio vel nam. Qui earum quisquam vitae dolorem cum nobis hic.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 6
-                        no_ktp: '360454731823249'
-                        name: 'Yessi Padmasari'
-                        date_of_birth: '1986-08-10'
-                        email: farida.azalea@example.net
-                        phone: '(+62) 827 4053 1233'
-                        description: 'Sit est aut vero voluptatem eaque ad optio. Nobis repellendus quis totam laudantium provident deleniti. Quia dicta et et quo autem est velit.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '320026409669994'
+                        name: 'Gada Saputra M.TI.'
+                        date_of_birth: '1973-05-17'
+                        email: wardi48@example.net
+                        phone: '0536 2896 940'
+                        description: 'Eum molestiae perspiciatis qui unde. Sunt aspernatur perferendis sunt. In laudantium laboriosam esse voluptatem aspernatur. Ipsam aspernatur qui velit voluptatum ipsam placeat tenetur.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 7
-                        no_ktp: '302824082987660'
-                        name: 'Edi Jasmani Manullang'
-                        date_of_birth: '1994-02-09'
-                        email: halima.natsir@example.net
-                        phone: '0636 3514 4632'
-                        description: 'Qui neque magnam voluptatem eos ut quo eius non. Quis et ut totam pariatur aut. Nihil occaecati corrupti repudiandae quia architecto.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '509341436963984'
+                        name: 'Mujur Jabal Kurniawan S.Kom'
+                        date_of_birth: '1977-10-14'
+                        email: rhastuti@example.org
+                        phone: '(+62) 734 3094 0917'
+                        description: 'Voluptas velit iure qui qui nobis nihil mollitia qui. Quis aut dolorum vero quia ut ullam facere amet. Rerum vitae ut eveniet sint quis.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 8
-                        no_ktp: '750261365811808'
-                        name: 'Zamira Suartini'
-                        date_of_birth: '1990-09-26'
-                        email: vanesa.yuliarti@example.org
-                        phone: '0330 3103 248'
-                        description: 'In porro dolorum natus et modi ut cum. Iste necessitatibus earum eaque ad. Ex facere dolorem deserunt et eius voluptates.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '869902579654509'
+                        name: 'Julia Sudiati'
+                        date_of_birth: '2009-03-25'
+                        email: almira82@example.net
+                        phone: '0945 6593 484'
+                        description: 'Ad architecto quo ex minus distinctio incidunt tenetur. Molestias dolor neque non esse et nesciunt ducimus.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 9
-                        no_ktp: '869505846000205'
-                        name: 'Kardi Manullang'
-                        date_of_birth: '2003-07-14'
-                        email: hassanah.rini@example.net
-                        phone: '0266 2281 5236'
-                        description: 'Necessitatibus rerum incidunt autem cum ut. Modi dolores qui ut illum et. Quibusdam ut magnam voluptate iusto reprehenderit ab natus. Dolores architecto quasi rerum ipsam dolorem et.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '252704304771376'
+                        name: 'Gaiman Marpaung'
+                        date_of_birth: '1972-10-05'
+                        email: jtamba@example.com
+                        phone: '(+62) 670 8420 4785'
+                        description: 'Minima quasi facere corporis labore. Est illo officia quia possimus quod sapiente. Aut qui delectus est adipisci et voluptatem accusamus.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                       -
                         id: 10
-                        no_ktp: '63427351429694'
-                        name: 'Elisa Belinda Namaga S.Pd'
-                        date_of_birth: '1992-03-26'
-                        email: kacung62@example.com
-                        phone: '(+62) 529 0956 4505'
-                        description: 'Dicta natus pariatur sed in. Architecto eaque amet non et nisi recusandae. Expedita numquam inventore placeat omnis. Qui harum sapiente voluptatibus aperiam.'
-                        created_at: '2024-05-26T12:59:56.000000Z'
-                        updated_at: '2024-05-26T12:59:56.000000Z'
+                        no_ktp: '344525914688688'
+                        name: 'Karsa Hidayat S.Gz'
+                        date_of_birth: '1987-06-28'
+                        email: zulaika.yuni@example.org
+                        phone: '0877 9338 121'
+                        description: 'Aliquid esse soluta cumque. Sunt quia corporis sit expedita. Sed eum voluptatem sequi est. Ex tempore voluptatem facere sequi soluta iste corrupti. Eveniet qui sed est.'
+                        profile_image: null
+                        created_at: '2024-05-27T04:15:24.000000Z'
+                        updated_at: '2024-05-27T04:15:24.000000Z'
                     first_page_url: 'http://apiproject.test/api/v1/costumer?page=1'
                     from: 1
-                    last_page: 20
-                    last_page_url: 'http://apiproject.test/api/v1/costumer?page=20'
+                    last_page: 21
+                    last_page_url: 'http://apiproject.test/api/v1/costumer?page=21'
                     links:
                       -
                         url: null
@@ -1673,12 +1726,12 @@ paths:
                         label: ...
                         active: false
                       -
-                        url: 'http://apiproject.test/api/v1/costumer?page=19'
-                        label: '19'
-                        active: false
-                      -
                         url: 'http://apiproject.test/api/v1/costumer?page=20'
                         label: '20'
+                        active: false
+                      -
+                        url: 'http://apiproject.test/api/v1/costumer?page=21'
+                        label: '21'
                         active: false
                       -
                         url: 'http://apiproject.test/api/v1/costumer?page=2'
@@ -1689,7 +1742,7 @@ paths:
                     per_page: 10
                     prev_page_url: null
                     to: 10
-                    total: 200
+                    total: 202
                 properties:
                   messages:
                     type: string
@@ -1705,104 +1758,114 @@ paths:
                         example:
                           -
                             id: 1
-                            no_ktp: '166363899931804'
-                            name: 'Garda Prasetyo'
-                            date_of_birth: '1975-09-30'
-                            email: trajata@example.com
-                            phone: '(+62) 392 4952 567'
-                            description: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '830722372698928'
+                            name: 'Ophelia Jamalia Riyanti S.Farm'
+                            date_of_birth: '1970-08-11'
+                            email: uli.mustofa@example.org
+                            phone: '(+62) 923 6767 9983'
+                            description: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 2
-                            no_ktp: '317884785688321'
-                            name: 'Puput Nasyidah'
-                            date_of_birth: '1979-05-24'
-                            email: ssitumorang@example.net
-                            phone: '0633 8917 070'
-                            description: 'Eligendi ipsam totam et omnis ut nostrum. Explicabo in rerum ut. Aliquam sed dolore rem in ratione repudiandae et. Culpa officia sint in expedita deleniti est excepturi.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '651651987632225'
+                            name: 'Asman Salahudin'
+                            date_of_birth: '1976-02-18'
+                            email: farah40@example.com
+                            phone: '(+62) 450 5782 0018'
+                            description: 'Eveniet omnis blanditiis dolores nobis. Quisquam magnam molestiae et nisi sit numquam. Qui et explicabo quae.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 3
-                            no_ktp: '897152731431219'
-                            name: 'Ellis Lailasari'
-                            date_of_birth: '1993-03-29'
-                            email: cici.safitri@example.com
-                            phone: '(+62) 270 6975 732'
-                            description: 'Autem omnis accusamus quos eos asperiores ut ut. Itaque in similique deleniti dolor voluptatibus explicabo. Accusamus sunt dolores nesciunt dolorum natus. Nihil saepe accusamus nulla autem.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '660574217802770'
+                            name: 'Lasmono Prasetyo'
+                            date_of_birth: '1997-06-15'
+                            email: pwaluyo@example.org
+                            phone: '(+62) 593 0842 001'
+                            description: 'Quibusdam cumque ut quia sapiente. Quia quia magnam laborum dolore quidem qui et consequatur. Quod adipisci est voluptas mollitia sed sit.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 4
-                            no_ktp: '513039062743979'
-                            name: 'Almira Wulandari'
-                            date_of_birth: '1997-10-08'
-                            email: efirgantoro@example.org
-                            phone: '0832 6486 9870'
-                            description: 'Nihil mollitia quis voluptatem omnis. Quo maiores ipsum aliquid accusamus esse pariatur recusandae. Et voluptate voluptatem excepturi autem tempore incidunt. Nulla aliquid ullam et esse.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '884386980151761'
+                            name: 'Joko Lutfan Hutagalung S.H.'
+                            date_of_birth: '1970-03-08'
+                            email: kunthara37@example.org
+                            phone: '(+62) 366 3836 818'
+                            description: 'Consequatur voluptates nemo explicabo et qui qui hic. Necessitatibus beatae voluptas voluptatem et iste rerum. Voluptatibus quisquam vel optio eos.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 5
-                            no_ktp: '453818582287698'
-                            name: 'Mahesa Hutagalung'
-                            date_of_birth: '2020-03-30'
-                            email: vnasyiah@example.net
-                            phone: '0317 7262 3110'
-                            description: 'Est consequatur dicta et est harum dolor dolor quos. Recusandae et commodi adipisci tempore temporibus voluptate incidunt at. Minima expedita eaque reiciendis assumenda.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '954117755733620'
+                            name: 'Embuh Suwarno'
+                            date_of_birth: '1999-12-06'
+                            email: waluyo.tasnim@example.org
+                            phone: '(+62) 470 1803 9955'
+                            description: 'Suscipit ea illum quae rerum est dicta. Rerum voluptate sapiente aut aut odio vel nam. Qui earum quisquam vitae dolorem cum nobis hic.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 6
-                            no_ktp: '360454731823249'
-                            name: 'Yessi Padmasari'
-                            date_of_birth: '1986-08-10'
-                            email: farida.azalea@example.net
-                            phone: '(+62) 827 4053 1233'
-                            description: 'Sit est aut vero voluptatem eaque ad optio. Nobis repellendus quis totam laudantium provident deleniti. Quia dicta et et quo autem est velit.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '320026409669994'
+                            name: 'Gada Saputra M.TI.'
+                            date_of_birth: '1973-05-17'
+                            email: wardi48@example.net
+                            phone: '0536 2896 940'
+                            description: 'Eum molestiae perspiciatis qui unde. Sunt aspernatur perferendis sunt. In laudantium laboriosam esse voluptatem aspernatur. Ipsam aspernatur qui velit voluptatum ipsam placeat tenetur.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 7
-                            no_ktp: '302824082987660'
-                            name: 'Edi Jasmani Manullang'
-                            date_of_birth: '1994-02-09'
-                            email: halima.natsir@example.net
-                            phone: '0636 3514 4632'
-                            description: 'Qui neque magnam voluptatem eos ut quo eius non. Quis et ut totam pariatur aut. Nihil occaecati corrupti repudiandae quia architecto.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '509341436963984'
+                            name: 'Mujur Jabal Kurniawan S.Kom'
+                            date_of_birth: '1977-10-14'
+                            email: rhastuti@example.org
+                            phone: '(+62) 734 3094 0917'
+                            description: 'Voluptas velit iure qui qui nobis nihil mollitia qui. Quis aut dolorum vero quia ut ullam facere amet. Rerum vitae ut eveniet sint quis.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 8
-                            no_ktp: '750261365811808'
-                            name: 'Zamira Suartini'
-                            date_of_birth: '1990-09-26'
-                            email: vanesa.yuliarti@example.org
-                            phone: '0330 3103 248'
-                            description: 'In porro dolorum natus et modi ut cum. Iste necessitatibus earum eaque ad. Ex facere dolorem deserunt et eius voluptates.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '869902579654509'
+                            name: 'Julia Sudiati'
+                            date_of_birth: '2009-03-25'
+                            email: almira82@example.net
+                            phone: '0945 6593 484'
+                            description: 'Ad architecto quo ex minus distinctio incidunt tenetur. Molestias dolor neque non esse et nesciunt ducimus.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 9
-                            no_ktp: '869505846000205'
-                            name: 'Kardi Manullang'
-                            date_of_birth: '2003-07-14'
-                            email: hassanah.rini@example.net
-                            phone: '0266 2281 5236'
-                            description: 'Necessitatibus rerum incidunt autem cum ut. Modi dolores qui ut illum et. Quibusdam ut magnam voluptate iusto reprehenderit ab natus. Dolores architecto quasi rerum ipsam dolorem et.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '252704304771376'
+                            name: 'Gaiman Marpaung'
+                            date_of_birth: '1972-10-05'
+                            email: jtamba@example.com
+                            phone: '(+62) 670 8420 4785'
+                            description: 'Minima quasi facere corporis labore. Est illo officia quia possimus quod sapiente. Aut qui delectus est adipisci et voluptatem accusamus.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                           -
                             id: 10
-                            no_ktp: '63427351429694'
-                            name: 'Elisa Belinda Namaga S.Pd'
-                            date_of_birth: '1992-03-26'
-                            email: kacung62@example.com
-                            phone: '(+62) 529 0956 4505'
-                            description: 'Dicta natus pariatur sed in. Architecto eaque amet non et nisi recusandae. Expedita numquam inventore placeat omnis. Qui harum sapiente voluptatibus aperiam.'
-                            created_at: '2024-05-26T12:59:56.000000Z'
-                            updated_at: '2024-05-26T12:59:56.000000Z'
+                            no_ktp: '344525914688688'
+                            name: 'Karsa Hidayat S.Gz'
+                            date_of_birth: '1987-06-28'
+                            email: zulaika.yuni@example.org
+                            phone: '0877 9338 121'
+                            description: 'Aliquid esse soluta cumque. Sunt quia corporis sit expedita. Sed eum voluptatem sequi est. Ex tempore voluptatem facere sequi soluta iste corrupti. Eveniet qui sed est.'
+                            profile_image: null
+                            created_at: '2024-05-27T04:15:24.000000Z'
+                            updated_at: '2024-05-27T04:15:24.000000Z'
                         items:
                           type: object
                           properties:
@@ -1811,28 +1874,31 @@ paths:
                               example: 1
                             no_ktp:
                               type: string
-                              example: '166363899931804'
+                              example: '830722372698928'
                             name:
                               type: string
-                              example: 'Garda Prasetyo'
+                              example: 'Ophelia Jamalia Riyanti S.Farm'
                             date_of_birth:
                               type: string
-                              example: '1975-09-30'
+                              example: '1970-08-11'
                             email:
                               type: string
-                              example: trajata@example.com
+                              example: uli.mustofa@example.org
                             phone:
                               type: string
-                              example: '(+62) 392 4952 567'
+                              example: '(+62) 923 6767 9983'
                             description:
                               type: string
-                              example: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                              example: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                            profile_image:
+                              type: string
+                              example: null
                             created_at:
                               type: string
-                              example: '2024-05-26T12:59:56.000000Z'
+                              example: '2024-05-27T04:15:24.000000Z'
                             updated_at:
                               type: string
-                              example: '2024-05-26T12:59:56.000000Z'
+                              example: '2024-05-27T04:15:24.000000Z'
                       first_page_url:
                         type: string
                         example: 'http://apiproject.test/api/v1/costumer?page=1'
@@ -1841,10 +1907,10 @@ paths:
                         example: 1
                       last_page:
                         type: integer
-                        example: 20
+                        example: 21
                       last_page_url:
                         type: string
-                        example: 'http://apiproject.test/api/v1/costumer?page=20'
+                        example: 'http://apiproject.test/api/v1/costumer?page=21'
                       links:
                         type: array
                         example:
@@ -1897,12 +1963,12 @@ paths:
                             label: ...
                             active: false
                           -
-                            url: 'http://apiproject.test/api/v1/costumer?page=19'
-                            label: '19'
-                            active: false
-                          -
                             url: 'http://apiproject.test/api/v1/costumer?page=20'
                             label: '20'
+                            active: false
+                          -
+                            url: 'http://apiproject.test/api/v1/costumer?page=21'
+                            label: '21'
                             active: false
                           -
                             url: 'http://apiproject.test/api/v1/costumer?page=2'
@@ -1937,7 +2003,7 @@ paths:
                         example: 10
                       total:
                         type: integer
-                        example: 200
+                        example: 202
       tags:
         - Endpoints
       security: []
@@ -1950,41 +2016,40 @@ paths:
       tags:
         - Endpoints
       requestBody:
-        required: true
+        required: false
         content:
-          application/json:
+          multipart/form-data:
             schema:
               type: object
               properties:
                 no_ktp:
-                  type: string
-                  description: ''
-                  example: illum
+                  type: required
+                  description: string
+                  example: qui
                 name:
-                  type: string
-                  description: ''
-                  example: impedit
+                  type: required
+                  description: string
+                  example: praesentium
                 date_of_birth:
                   type: string
-                  description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:46'
+                  description: ''
+                  example: est
                 email:
                   type: string
                   description: ''
-                  example: windler.dax@example.net
+                  example: angelita.lemke@example.net
                 phone:
-                  type: string
-                  description: ''
-                  example: exercitationem
+                  type: required
+                  description: string
+                  example: rerum
                 description:
                   type: string
                   description: ''
-                  example: 'Iure velit nisi omnis distinctio sit voluptatem.'
-              required:
-                - no_ktp
-                - name
-                - date_of_birth
-                - phone
+                  example: 'Dolorem incidunt omnis incidunt omnis.'
+                profile_image:
+                  type: string
+                  format: binary
+                  description: ''
       security: []
   '/api/v1/costumer/{id}':
     get:
@@ -2003,59 +2068,81 @@ paths:
                   message: Success
                   data:
                     id: 1
-                    no_ktp: '166363899931804'
-                    name: 'Garda Prasetyo'
-                    date_of_birth: '1975-09-30'
-                    email: trajata@example.com
-                    phone: '(+62) 392 4952 567'
-                    'description ': 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
-                    created_at: '2024-05-26T12:59:56.000000Z'
-                    updated_at: '2024-05-26T12:59:56.000000Z'
+                    no_ktp: '830722372698928'
+                    name: 'Ophelia Jamalia Riyanti S.Farm'
+                    date_of_birth: '1970-08-11'
+                    email: uli.mustofa@example.org
+                    phone: '(+62) 923 6767 9983'
+                    'description ': 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
+                    created_at: '2024-05-27T04:15:24.000000Z'
+                    updated_at: '2024-05-27T04:15:24.000000Z'
                     rentals:
                       -
-                        id: 6
+                        id: 56
                         costumer_id: 1
-                        no_car: 2
-                        date_borrow: '2013-10-07'
-                        date_return: '2024-02-12'
-                        down_payment: 764
-                        discount: 10818
-                        total: '1555'
-                        created_at: '2024-05-26T12:59:57.000000Z'
-                        updated_at: '2024-05-26T12:59:57.000000Z'
+                        no_car: 6
+                        date_borrow: '1986-05-02'
+                        date_return: '2024-05-20'
+                        down_payment: 7644
+                        discount: 646653926
+                        total: '47423714'
+                        created_at: '2024-05-27T04:15:25.000000Z'
+                        updated_at: '2024-05-27T04:15:25.000000Z'
                       -
-                        id: 167
+                        id: 146
+                        costumer_id: 1
+                        no_car: 3
+                        date_borrow: '2005-06-04'
+                        date_return: '2024-03-20'
+                        down_payment: 76141172
+                        discount: 549195
+                        total: '456'
+                        created_at: '2024-05-27T04:15:25.000000Z'
+                        updated_at: '2024-05-27T04:15:25.000000Z'
+                      -
+                        id: 513
+                        costumer_id: 1
+                        no_car: 7
+                        date_borrow: '1948-03-28'
+                        date_return: '2024-04-13'
+                        down_payment: 72195
+                        discount: 981095516
+                        total: '620546'
+                        created_at: '2024-05-27T04:15:25.000000Z'
+                        updated_at: '2024-05-27T04:15:25.000000Z'
+                      -
+                        id: 721
                         costumer_id: 1
                         no_car: 8
-                        date_borrow: '1944-12-11'
-                        date_return: '2024-04-29'
-                        down_payment: 2943
-                        discount: 2952949
-                        total: '564652'
-                        created_at: '2024-05-26T12:59:57.000000Z'
-                        updated_at: '2024-05-26T12:59:57.000000Z'
+                        date_borrow: '2016-10-12'
+                        date_return: '2024-03-06'
+                        down_payment: 7849974
+                        discount: 36
+                        total: '82'
+                        created_at: '2024-05-27T04:15:26.000000Z'
+                        updated_at: '2024-05-27T04:15:26.000000Z'
                       -
-                        id: 178
+                        id: 845
                         costumer_id: 1
-                        no_car: 4
-                        date_borrow: '2019-07-27'
-                        date_return: '2024-04-02'
-                        down_payment: 0
-                        discount: 223070379
-                        total: '798996009'
-                        created_at: '2024-05-26T12:59:57.000000Z'
-                        updated_at: '2024-05-26T12:59:57.000000Z'
+                        no_car: 3
+                        date_borrow: '1948-04-03'
+                        date_return: '2024-01-25'
+                        down_payment: 75832561
+                        discount: 5
+                        total: '339904057'
+                        created_at: '2024-05-27T04:15:26.000000Z'
+                        updated_at: '2024-05-27T04:15:26.000000Z'
                       -
-                        id: 818
+                        id: 852
                         costumer_id: 1
-                        no_car: 5
-                        date_borrow: '1947-11-18'
-                        date_return: '2024-02-09'
-                        down_payment: 18289
-                        discount: 2468263
-                        total: '914761'
-                        created_at: '2024-05-26T12:59:58.000000Z'
-                        updated_at: '2024-05-26T12:59:58.000000Z'
+                        no_car: 1
+                        date_borrow: '1939-11-14'
+                        date_return: '2024-04-06'
+                        down_payment: 12215862
+                        discount: 927678640
+                        total: '70193315'
+                        created_at: '2024-05-27T04:15:26.000000Z'
+                        updated_at: '2024-05-27T04:15:26.000000Z'
                     returs: []
                 properties:
                   message:
@@ -2069,108 +2156,130 @@ paths:
                         example: 1
                       no_ktp:
                         type: string
-                        example: '166363899931804'
+                        example: '830722372698928'
                       name:
                         type: string
-                        example: 'Garda Prasetyo'
+                        example: 'Ophelia Jamalia Riyanti S.Farm'
                       date_of_birth:
                         type: string
-                        example: '1975-09-30'
+                        example: '1970-08-11'
                       email:
                         type: string
-                        example: trajata@example.com
+                        example: uli.mustofa@example.org
                       phone:
                         type: string
-                        example: '(+62) 392 4952 567'
+                        example: '(+62) 923 6767 9983'
                       'description ':
                         type: string
-                        example: 'Sunt nesciunt mollitia dolore illo. Et asperiores aliquam saepe laborum id. Quia officiis itaque voluptate dignissimos quasi.'
+                        example: 'Est rerum quaerat mollitia ducimus. Aut et quidem molestiae ab aut placeat sed. Facilis ea eius est delectus atque perferendis voluptatem dolor. Tenetur alias iste nobis.'
                       created_at:
                         type: string
-                        example: '2024-05-26T12:59:56.000000Z'
+                        example: '2024-05-27T04:15:24.000000Z'
                       updated_at:
                         type: string
-                        example: '2024-05-26T12:59:56.000000Z'
+                        example: '2024-05-27T04:15:24.000000Z'
                       rentals:
                         type: array
                         example:
                           -
-                            id: 6
+                            id: 56
                             costumer_id: 1
-                            no_car: 2
-                            date_borrow: '2013-10-07'
-                            date_return: '2024-02-12'
-                            down_payment: 764
-                            discount: 10818
-                            total: '1555'
-                            created_at: '2024-05-26T12:59:57.000000Z'
-                            updated_at: '2024-05-26T12:59:57.000000Z'
+                            no_car: 6
+                            date_borrow: '1986-05-02'
+                            date_return: '2024-05-20'
+                            down_payment: 7644
+                            discount: 646653926
+                            total: '47423714'
+                            created_at: '2024-05-27T04:15:25.000000Z'
+                            updated_at: '2024-05-27T04:15:25.000000Z'
                           -
-                            id: 167
+                            id: 146
+                            costumer_id: 1
+                            no_car: 3
+                            date_borrow: '2005-06-04'
+                            date_return: '2024-03-20'
+                            down_payment: 76141172
+                            discount: 549195
+                            total: '456'
+                            created_at: '2024-05-27T04:15:25.000000Z'
+                            updated_at: '2024-05-27T04:15:25.000000Z'
+                          -
+                            id: 513
+                            costumer_id: 1
+                            no_car: 7
+                            date_borrow: '1948-03-28'
+                            date_return: '2024-04-13'
+                            down_payment: 72195
+                            discount: 981095516
+                            total: '620546'
+                            created_at: '2024-05-27T04:15:25.000000Z'
+                            updated_at: '2024-05-27T04:15:25.000000Z'
+                          -
+                            id: 721
                             costumer_id: 1
                             no_car: 8
-                            date_borrow: '1944-12-11'
-                            date_return: '2024-04-29'
-                            down_payment: 2943
-                            discount: 2952949
-                            total: '564652'
-                            created_at: '2024-05-26T12:59:57.000000Z'
-                            updated_at: '2024-05-26T12:59:57.000000Z'
+                            date_borrow: '2016-10-12'
+                            date_return: '2024-03-06'
+                            down_payment: 7849974
+                            discount: 36
+                            total: '82'
+                            created_at: '2024-05-27T04:15:26.000000Z'
+                            updated_at: '2024-05-27T04:15:26.000000Z'
                           -
-                            id: 178
+                            id: 845
                             costumer_id: 1
-                            no_car: 4
-                            date_borrow: '2019-07-27'
-                            date_return: '2024-04-02'
-                            down_payment: 0
-                            discount: 223070379
-                            total: '798996009'
-                            created_at: '2024-05-26T12:59:57.000000Z'
-                            updated_at: '2024-05-26T12:59:57.000000Z'
+                            no_car: 3
+                            date_borrow: '1948-04-03'
+                            date_return: '2024-01-25'
+                            down_payment: 75832561
+                            discount: 5
+                            total: '339904057'
+                            created_at: '2024-05-27T04:15:26.000000Z'
+                            updated_at: '2024-05-27T04:15:26.000000Z'
                           -
-                            id: 818
+                            id: 852
                             costumer_id: 1
-                            no_car: 5
-                            date_borrow: '1947-11-18'
-                            date_return: '2024-02-09'
-                            down_payment: 18289
-                            discount: 2468263
-                            total: '914761'
-                            created_at: '2024-05-26T12:59:58.000000Z'
-                            updated_at: '2024-05-26T12:59:58.000000Z'
+                            no_car: 1
+                            date_borrow: '1939-11-14'
+                            date_return: '2024-04-06'
+                            down_payment: 12215862
+                            discount: 927678640
+                            total: '70193315'
+                            created_at: '2024-05-27T04:15:26.000000Z'
+                            updated_at: '2024-05-27T04:15:26.000000Z'
                         items:
                           type: object
                           properties:
                             id:
                               type: integer
-                              example: 6
+                              example: 56
                             costumer_id:
                               type: integer
                               example: 1
                             no_car:
                               type: integer
-                              example: 2
+                              example: 6
                             date_borrow:
                               type: string
-                              example: '2013-10-07'
+                              example: '1986-05-02'
                             date_return:
                               type: string
-                              example: '2024-02-12'
+                              example: '2024-05-20'
                             down_payment:
                               type: integer
-                              example: 764
+                              example: 7644
                             discount:
                               type: integer
-                              example: 10818
+                              example: 646653926
                             total:
                               type: string
-                              example: '1555'
+                              example: '47423714'
                             created_at:
                               type: string
-                              example: '2024-05-26T12:59:57.000000Z'
+                              example: '2024-05-27T04:15:25.000000Z'
                             updated_at:
                               type: string
-                              example: '2024-05-26T12:59:57.000000Z'
+                              example: '2024-05-27T04:15:25.000000Z'
                       returs:
                         type: array
                         example: []
@@ -2188,34 +2297,38 @@ paths:
       requestBody:
         required: false
         content:
-          application/json:
+          multipart/form-data:
             schema:
               type: object
               properties:
                 no_ktp:
                   type: string
                   description: ''
-                  example: molestias
+                  example: est
                 name:
                   type: string
                   description: ''
-                  example: nesciunt
+                  example: minima
                 date_of_birth:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:46'
+                  example: '2024-05-27T05:16:45'
                 email:
                   type: string
                   description: ''
-                  example: roel.howe@example.net
+                  example: vhowe@example.net
                 phone:
                   type: string
                   description: ''
-                  example: iste
+                  example: et
                 description:
                   type: string
                   description: ''
-                  example: 'Perferendis et quam autem consequuntur in quisquam.'
+                  example: 'Quibusdam eius omnis distinctio consequatur et perspiciatis.'
+                profile_image:
+                  type: string
+                  format: binary
+                  description: 'Must be an image. Must not be greater than 2048 kilobytes.'
       security: []
     delete:
       summary: 'Remove the specified resource from storage.'
@@ -2279,27 +2392,27 @@ paths:
                 costumer_id:
                   type: integer
                   description: ''
-                  example: 10
+                  example: 20
                 id_penalties:
                   type: integer
                   description: ''
-                  example: 17
+                  example: 13
                 date_borrow:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:46'
+                  example: '2024-05-27T05:16:45'
                 date_return:
                   type: string
                   description: 'Must be a valid date.'
-                  example: '2024-05-26T16:22:46'
+                  example: '2024-05-27T05:16:45'
                 discount:
                   type: integer
                   description: ''
-                  example: 2
+                  example: 7
                 total:
                   type: integer
                   description: ''
-                  example: 13
+                  example: 8
               required:
                 - costumer_id
                 - id_penalties
@@ -2357,7 +2470,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the return.'
-        example: 5
+        example: 19
         required: true
         schema:
           type: integer
