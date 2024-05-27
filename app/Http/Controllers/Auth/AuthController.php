@@ -63,6 +63,7 @@ class AuthController extends Controller
 
     /**
      * Logout
+     * @authenticated
      */
     public function logout(Request $request)
     {
