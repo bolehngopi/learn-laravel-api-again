@@ -24,10 +24,11 @@ class StoreCostumerRequest extends FormRequest
         return [
             'no_ktp' => 'string|required',
             'name' => 'string|required',
-            'date_of_birth' => 'date|required',
+            'date_of_birth' => 'date',
             'email' => 'string|unique:costumers',
             'phone' => 'string|required',
-            'description' => 'string'
+            'description' => 'string',
+            'profile_image' => 'image|mimes:png,jpg,jpeg|max:2048'
         ];
     }
 }

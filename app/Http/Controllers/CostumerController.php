@@ -19,7 +19,7 @@ class CostumerController extends Controller
         $costumers = Costumer::paginate($pageSize);
         return response()->json([
             'messages' => 'success',
-            'data' => CostumerResource::collection($costumers)
+            'data' => $costumers
         ]);
     }
 
@@ -30,8 +30,16 @@ class CostumerController extends Controller
     {
         $credentials = $request->validated();
 
+        if ($request->hasFile('profile_image')) {
+            $file = $request->file('profile_image');
+            $fileName = time() . '.' . $file->getClientOriginalExtension();
+            $storagePath = $file->storeAs('public/profile_images', $fileName);
+            $storagePath = str_replace('public', 'storage', $storagePath);
+        }
+
         if($credentials) {
             $costumer = new Costumer($credentials);
+            $costumer->profile_image = $storagePath;
             $costumer->save();
 
             return response()->json([
@@ -68,7 +76,8 @@ class CostumerController extends Controller
             'date_of_birth' => $request->date_of_birth ?? $costumer->date_of_birth,
             'email' => $request->email ?? $costumer->email,
             'phone' => $request->phone ?? $costumer->phone,
-            'description' => $request->description ?? $costumer->description
+            'description' => $request->description ?? $costumer->description,
+            'profile_image' => $request->profile_image ?? $costumer->profile_image,
         ]);
 
         if (!$update) {
