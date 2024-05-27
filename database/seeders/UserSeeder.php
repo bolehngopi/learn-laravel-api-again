@@ -16,7 +16,8 @@ class UserSeeder extends Seeder
         User::truncate();
         User::factory()->create([
             'username' => 'admin1',
-            'password' => 'admin1'
+            'password' => 'admin1',
+            'isAdmin' => true
         ]);
 
         User::factory()->create([

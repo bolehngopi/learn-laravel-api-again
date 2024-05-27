@@ -42,7 +42,8 @@ class AuthController extends Controller
     public function register(Request $request) {
         $credentials = $request->validate([
             'username' => 'string|required|unique:users',
-            'password' => 'string|required'
+            'password' => 'string|required',
+            'isAdmin' => 'boolean'
         ]);
 
         if($credentials) {
